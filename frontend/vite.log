@@ -1,0 +1,26 @@
+
+> libreria-frontend@1.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m1851[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m2:36:50 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx[22m
+[2m2:36:50 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx[22m
+[2m2:36:59 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/context/AuthContext.jsx[22m
+[2m2:37:10 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx[22m
+[2m4:43:24 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx[22m
+[2m4:43:57 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx[22m
+[2m4:44:47 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Principal.jsx[22m
+[2m5:43:28 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LibroCard.jsx[22m
+[2m5:43:33 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LibroCard.jsx[22m
+[2m5:43:43 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Principal.jsx[22m
+[2m5:43:47 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Principal.jsx[22m
+[2m5:43:54 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Principal.jsx[22m
+[2m5:44:08 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx[22m
+[2m5:44:13 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m5:44:22 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m5:45:14 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminPanel.jsx[22m
+[2m5:46:09 p. m.[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/DetalleLibro.jsx[22m

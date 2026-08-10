@@ -1,0 +1,1001 @@
+﻿NOMBRE,EMAIL,GASTO_PRED,LIBROS_PRED,CATEGORIA_PRED,AUTOR_PRED,NIVEL_GASTO_PRED,NIVEL_LECTURA_PRED
+Kevin Ávila Cabrera,cliente1@cliente.com,6453.2,22.295,Historia,Yuval Noah Harari,alto,alto
+Florencia Jiménez Muñoz,cliente2@cliente.com,485.35,1.615,Fantasia,Julio Cortazar,bajo,bajo
+Juan Navarrete Muñoz,cliente3@cliente.com,3297.975,11.835,Historia,Bill Bryson,alto,alto
+Andrea García Cabrera,cliente4@cliente.com,3251.8,13.195,Historia,William Faulkner,alto,alto
+Ronald Chávez Flores,cliente5@cliente.com,836.975,3.2,Historia,Jack Weatherford,bajo,medio
+Silvio Peralta Morales,cliente6@cliente.com,1605.0,5.485,Infantil,L. Frank Baum,bajo,medio
+Laura Reyes García,cliente7@cliente.com,937.25,3.065,Historia,Jared Diamond,medio,medio
+Diego Castillo Núñez,cliente8@cliente.com,1547.9,5.125,Tecnologia,Marcus Garrido,medio,medio
+Constanza Flores Cruz,cliente9@cliente.com,3011.275,12.265,Autoayuda,Viktor Frankl,alto,alto
+Tomás Pérez Castillo,cliente10@cliente.com,6383.625,21.62,Ciencia Ficcion,C.S. Lewis,alto,alto
+Emilia Pizarro Guerrero,cliente11@cliente.com,3853.625,14.335,Ciencia Ficcion,Patrick Rothfuss,alto,alto
+Ernesto Jiménez Jara,cliente12@cliente.com,1778.4,6.34,Autoayuda,Fiodor Dostoievski,medio,alto
+Mónica Fuentes Ortiz,cliente13@cliente.com,2548.6,9.965,Literatura,George Orwell,medio,alto
+Jorge Ramírez Pizarro,cliente14@cliente.com,2787.625,9.84,Historia,Harper Lee,medio,alto
+Sebastián Díaz Martínez,cliente15@cliente.com,2957.55,10.2,Fantasia,Brandon Sanderson,alto,alto
+Rosa Reyes Vargas,cliente16@cliente.com,2168.9,7.7,Infantil,Lewis Carroll,bajo,medio
+Ana Vargas Moreno,cliente17@cliente.com,1491.425,5.125,Literatura,Miguel de Cervantes,alto,alto
+Claudio Vargas Cárdenas,cliente18@cliente.com,2288.25,9.005,Infantil,Orson Scott Card,alto,alto
+Carmen León Rodríguez,cliente19@cliente.com,4510.85,16.625,Historia,Viktor Frankl,alto,alto
+Oscar Gómez Cruz,cliente20@cliente.com,2878.375,9.64,Ciencia Ficcion,Frank Herbert,medio,alto
+Héctor Jiménez Molina,cliente21@cliente.com,5041.675,16.88,Ciencia Ficcion,Maurice Sendak,alto,alto
+Daniela Vargas Peña,cliente22@cliente.com,926.1,3.385,Literatura,Franz Kafka,medio,medio
+Andrés Peña Barría,cliente23@cliente.com,4570.775,17.225,Infantil,J.M. Barrie,alto,alto
+Sebastián Jara Vargas,cliente24@cliente.com,4860.0,15.95,Historia,Bill Bryson,medio,alto
+Mauricio Molina Muñoz,cliente25@cliente.com,5212.625,17.61,Misterio,Terence N. D'Altroy,alto,alto
+Isabel Pérez León,cliente26@cliente.com,1128.2,3.92,Autoayuda,Simon Schama,medio,medio
+Silvio Medina Soto,cliente27@cliente.com,1258.2,4.075,Literatura,Jared Diamond,medio,medio
+Alejandro Morales Morales,cliente28@cliente.com,30.15,0.04,Tecnologia,Susan Cruz,bajo,bajo
+Elena Flores Ponce,cliente29@cliente.com,2767.525,8.395,Fantasia,Patrick Rothfuss,medio,alto
+Mónica Martínez Guerrero,cliente30@cliente.com,1224.7,4.215,Misterio,Juan Rulfo,medio,medio
+Florencia Chávez Paredes,cliente31@cliente.com,952.425,3.47,Tecnologia,Marcus Garrido,medio,medio
+Gloria Cabrera Morales,cliente32@cliente.com,2814.875,9.955,Fantasia,Patrick Rothfuss,alto,alto
+Patricia Ramírez Vidal,cliente33@cliente.com,4178.2,14.025,Misterio,Gabriel Garcia Marquez,alto,alto
+Regina Díaz Montero,cliente34@cliente.com,463.8,1.77,Literatura,Jared Diamond,bajo,bajo
+Regina Gómez Jiménez,cliente35@cliente.com,807.4,3.005,Literatura,Julio Cortazar,medio,bajo
+Gabriel Rodríguez Gómez,cliente36@cliente.com,334.15,1.035,Fantasia,Antoine de Saint-Exupery,medio,bajo
+Roberto Espinoza Iglesias,cliente37@cliente.com,3367.6,11.76,Fantasia,Aldous Huxley,alto,alto
+Ricardo Ibarra Muñoz,cliente38@cliente.com,2754.275,9.605,Ciencia Ficcion,Douglas Adams,medio,alto
+Emilia Rangel Iglesias,cliente39@cliente.com,4586.825,13.0,Fantasia,J.R.R. Tolkien,alto,alto
+Beatriz Ortiz Herrera,cliente40@cliente.com,1934.025,6.92,Ciencia Ficcion,Mark Twain,medio,alto
+Emilia Muñoz Rivera,cliente41@cliente.com,1048.85,4.265,Autoayuda,Marie Kondo,bajo,medio
+Tomás Ponce Bustos,cliente42@cliente.com,3756.45,12.72,Tecnologia,Suzanne Collins,alto,alto
+Marcos Morales Silva,cliente43@cliente.com,1791.775,6.67,Ciencia Ficcion,Ray Bradbury,alto,alto
+Lorena Jara Gómez,cliente44@cliente.com,735.15,3.06,Historia,Marie Kondo,bajo,medio
+Patricio Díaz Vidal,cliente45@cliente.com,4540.7,15.315,Ciencia Ficcion,Patrick Rothfuss,alto,alto
+Silvia Vargas Ávila,cliente46@cliente.com,4104.325,11.525,Fantasia,Patrick Rothfuss,alto,alto
+Gonzalo Morales Torres,cliente47@cliente.com,1159.2,4.31,Autoayuda,Terence N. D'Altroy,medio,medio
+Tomás Silva Navarrete,cliente48@cliente.com,1583.6,6.1,Historia,Jared Diamond,medio,alto
+Daniel Cruz López,cliente49@cliente.com,236.55,1.31,Historia,Malcolm Gladwell,bajo,bajo
+Graciela Moreno Vega,cliente50@cliente.com,928.35,3.385,Misterio,George Orwell,bajo,bajo
+Bárbara Carrasco Dominguez,cliente51@cliente.com,505.7,1.39,Tecnologia,Tom Mitchell,bajo,bajo
+Mónica Guerrero Peralta,cliente52@cliente.com,323.9,0.87,Historia,Malcolm Gladwell,bajo,bajo
+Martina Rodríguez Gómez,cliente53@cliente.com,904.4,4.255,Literatura,Franz Kafka,bajo,medio
+Carmen Bustos González,cliente54@cliente.com,2679.375,9.615,Infantil,L. Frank Baum,alto,alto
+Emilia Ponce Montero,cliente55@cliente.com,3920.075,12.875,Autoayuda,Carol Dweck,alto,alto
+Rosa Cruz García,cliente56@cliente.com,756.7,1.63,Autoayuda,Malcolm Gladwell,bajo,bajo
+Elena Fuentes Herrera,cliente57@cliente.com,639.3,2.06,Infantil,Roald Dahl,medio,bajo
+Patricia Martínez Chávez,cliente58@cliente.com,20.7,0.035,Literatura,Jared Diamond,bajo,bajo
+María Peña Molina,cliente59@cliente.com,66.7,0.25,Misterio,Paula Hawkins,bajo,bajo
+Mario Paredes Torres,cliente60@cliente.com,4381.75,11.475,Fantasia,Patrick Rothfuss,alto,alto
+Bárbara López Jara,cliente61@cliente.com,401.05,1.64,Historia,Dale Carnegie,bajo,medio
+Gonzalo Gómez Cortes,cliente62@cliente.com,3939.8,14.57,Literatura,Carol Dweck,alto,alto
+Fernando Pizarro Muñoz,cliente63@cliente.com,806.85,2.965,Tecnologia,Erich Gamma,medio,medio
+Alejandra Bravo Torres,cliente64@cliente.com,426.2,1.53,Literatura,William Faulkner,bajo,bajo
+Lorena Cortes Flores,cliente65@cliente.com,3699.0,12.48,Literatura,Carol Dweck,medio,alto
+Renata Rodríguez Ortiz,cliente66@cliente.com,1223.05,4.185,Misterio,Jack Weatherford,bajo,medio
+Oscar Sánchez Ávila,cliente67@cliente.com,21.3,0.065,Historia,Jared Diamond,bajo,bajo
+Lorena Vásquez Medina,cliente68@cliente.com,3797.8,13.92,Autoayuda,Charles C. Mann,alto,alto
+Elena Lara Ortiz,cliente69@cliente.com,1881.65,6.835,Misterio,Jose Saramago,medio,alto
+Alberto Sánchez Garay,cliente70@cliente.com,769.375,2.815,Literatura,James Clear,bajo,medio
+Lorena Figueroa Castillo,cliente71@cliente.com,790.025,2.99,Infantil,Mark Twain,medio,medio
+Patricia Paredes Núñez,cliente72@cliente.com,1244.0,4.4,Autoayuda,Marie Kondo,medio,medio
+Rosa Vargas Navarrete,cliente73@cliente.com,1247.6,4.76,Historia,Simon Schama,medio,medio
+Fausto Vega Mendoza,cliente74@cliente.com,1321.1,5.795,Infantil,Brandon Sanderson,alto,alto
+Silvio Barrera Sánchez,cliente75@cliente.com,510.6,1.64,Literatura,Harper Lee,bajo,bajo
+Fernando Bravo Paredes,cliente76@cliente.com,3964.9,11.465,Infantil,E.B. White,alto,alto
+Gloria Silva Muñoz,cliente77@cliente.com,1708.1,5.96,Autoayuda,Marie Kondo,medio,alto
+Constanza Torres Lara,cliente78@cliente.com,5364.75,17.42,Fantasia,Roald Dahl,alto,alto
+Andrea Vargas Chávez,cliente79@cliente.com,577.225,2.11,Fantasia,Johanna Spyri,medio,medio
+Regina Reyes Jiménez,cliente80@cliente.com,4431.6,14.01,Historia,Yuval Noah Harari,alto,alto
+Florencia Sánchez Castillo,cliente81@cliente.com,695.2,2.33,Historia,Jared Diamond,bajo,medio
+Paola Fuentes Jara,cliente82@cliente.com,24.65,0.1,Autoayuda,Paulo Coelho,bajo,bajo
+Gonzalo Bustos Vargas,cliente83@cliente.com,930.375,2.745,Historia,Hugh Thomas,bajo,bajo
+Brandon García Medina,cliente84@cliente.com,4809.675,17.75,Autoayuda,Paulo Coelho,alto,alto
+Andrés Molina Martínez,cliente85@cliente.com,3451.875,11.43,Ciencia Ficcion,Orson Scott Card,alto,alto
+Manuel Contreras García,cliente86@cliente.com,774.15,2.485,Autoayuda,Eckhart Tolle,bajo,medio
+Carmen Jiménez Chávez,cliente87@cliente.com,4024.1,14.34,Ciencia Ficcion,C.S. Lewis,alto,alto
+Augusto Ramírez Pérez,cliente88@cliente.com,1470.55,6.09,Literatura,Franz Kafka,medio,medio
+Martina Vásquez Vargas,cliente89@cliente.com,1010.35,3.36,Historia,Hugh Thomas,medio,medio
+Sofía Ponce Lara,cliente90@cliente.com,6096.725,22.885,Infantil,Lewis Carroll,alto,alto
+Felipe Torres Lara,cliente91@cliente.com,4261.8,16.215,Infantil,E.B. White,alto,alto
+Bárbara Cabrera Núñez,cliente92@cliente.com,1772.525,6.02,Infantil,C.S. Lewis,bajo,medio
+Leonardo Salazar Vargas,cliente93@cliente.com,1958.05,6.45,Literatura,Juan Rulfo,medio,alto
+Roberta Rodríguez Figueroa,cliente94@cliente.com,1875.375,6.535,Misterio,Douglas Preston,alto,medio
+Patricio Peralta Morales,cliente95@cliente.com,1880.85,7.63,Infantil,Antoine de Saint-Exupery,alto,alto
+Raúl Prieto Moreno,cliente96@cliente.com,1928.25,5.945,Historia,Jose Saramago,medio,medio
+Fausto Chávez Ibarra,cliente97@cliente.com,4198.775,18.555,Literatura,Jack Weatherford,alto,alto
+Juan Rivera Ávila,cliente98@cliente.com,6535.25,19.17,Literatura,Robert C. Martin,alto,alto
+Constanza Ramírez Fuentes,cliente99@cliente.com,3349.175,9.91,Ciencia Ficcion,C.S. Lewis,medio,alto
+Ricardo Rangel Ramírez,cliente100@cliente.com,3960.0,14.345,Misterio,Miguel de Cervantes,alto,alto
+Bárbara Medina Flores,cliente101@cliente.com,923.6,3.355,Literatura,Juan Rulfo,bajo,medio
+Regina Pérez Rivera,cliente102@cliente.com,1250.475,4.49,Infantil,Arthur C. Clarke,bajo,medio
+Elena Jiménez Contreras,cliente103@cliente.com,957.35,3.33,Autoayuda,Paulo Coelho,bajo,medio
+Laura Muñoz Paredes,cliente104@cliente.com,183.45,0.795,Historia,Paulo Coelho,bajo,bajo
+Florencia Lara Reyes,cliente105@cliente.com,155.425,0.75,Historia,Napoleon Hill,medio,bajo
+Mónica Cortes Molina,cliente106@cliente.com,1081.95,3.985,Ciencia Ficcion,Marcus Garrido,bajo,medio
+Oscar Barría Torres,cliente107@cliente.com,5482.275,18.24,Ciencia Ficcion,Stuart Russell,alto,alto
+Lorena López Ortiz,cliente108@cliente.com,826.375,2.65,Historia,Charles Dickens,medio,medio
+Fernanda Montero Lara,cliente109@cliente.com,880.4,3.13,Historia,Charles Dickens,bajo,medio
+Marcos Vargas Vidal,cliente110@cliente.com,2323.6,8.01,Fantasia,C.S. Lewis,medio,alto
+Ronald Reyes Barría,cliente111@cliente.com,4381.75,17.895,Historia,Harper Lee,alto,alto
+Silvia Espinoza Muñoz,cliente112@cliente.com,5317.125,18.025,Ciencia Ficcion,J.M. Barrie,alto,alto
+José Lara Ponce,cliente113@cliente.com,3560.35,11.38,Ciencia Ficcion,C.S. Lewis,medio,alto
+Roberta Morales Vega,cliente114@cliente.com,1000.4,3.015,Historia,Charles C. Mann,medio,medio
+Carlos Zamora León,cliente115@cliente.com,484.0,2.28,Historia,Paulo Coelho,bajo,bajo
+Gloria Díaz Cruz,cliente116@cliente.com,2071.3,6.955,Misterio,Dan Brown,bajo,alto
+Mónica Cruz Montero,cliente117@cliente.com,2602.7,12.06,Fantasia,L. Frank Baum,alto,alto
+Valentina Gómez Moreno,cliente118@cliente.com,424.15,2.16,Historia,Douglas Preston,bajo,bajo
+Oscar Soto Gómez,cliente119@cliente.com,1834.325,6.605,Infantil,Mark Twain,medio,alto
+Lorena Lara Peña,cliente120@cliente.com,10.1,0.005,Tecnologia,Ray Bradbury,bajo,bajo
+Laura Lara Vargas,cliente121@cliente.com,3018.425,10.26,Autoayuda,Malcolm Gladwell,alto,alto
+Antonella Barría Cruz,cliente122@cliente.com,1810.5,5.935,Historia,Jared Diamond,medio,alto
+Mónica Herrera Muñoz,cliente123@cliente.com,1465.9,4.915,Tecnologia,Javier Zarca,medio,medio
+Lorena Jara Pérez,cliente124@cliente.com,1223.875,3.2,Fantasia,L. Frank Baum,medio,medio
+Valeria Rangel Mendoza,cliente125@cliente.com,589.15,1.95,Historia,Terence N. D'Altroy,bajo,bajo
+Graciela Ortiz Flores,cliente126@cliente.com,1768.4,5.92,Ciencia Ficcion,Erich Gamma,bajo,medio
+Roberta Cabrera Sánchez,cliente127@cliente.com,791.3,3.09,Ciencia Ficcion,Marie Kondo,bajo,medio
+Andrés Peña González,cliente128@cliente.com,1531.95,6.245,Literatura,Dale Carnegie,medio,medio
+Constanza Medina Fuentes,cliente129@cliente.com,2635.775,9.255,Literatura,Viktor Frankl,medio,alto
+Valentina Lara Rodríguez,cliente130@cliente.com,3203.025,10.79,Literatura,Jose Saramago,alto,alto
+Sergio Sánchez Díaz,cliente131@cliente.com,5779.475,20.345,Ciencia Ficcion,C.S. Lewis,alto,alto
+Martina Muñoz Flores,cliente132@cliente.com,4970.65,17.81,Fantasia,J.K. Rowling,alto,alto
+Graciela Díaz Lara,cliente133@cliente.com,3725.6,13.08,Ciencia Ficcion,Carol Dweck,alto,alto
+Sergio Lara García,cliente134@cliente.com,1446.9,4.845,Literatura,Simon Schama,medio,medio
+Pedro Fuentes Lara,cliente135@cliente.com,964.75,2.985,Tecnologia,Stuart Russell,bajo,medio
+Silvio Morales Silva,cliente136@cliente.com,786.95,3.325,Misterio,Charles Dickens,bajo,medio
+Emilia García Torres,cliente137@cliente.com,971.55,3.285,Autoayuda,Harper Lee,bajo,bajo
+Arturo León Iglesias,cliente138@cliente.com,1557.6,5.62,Tecnologia,Paul Maier,medio,medio
+Gloria Sánchez Morales,cliente139@cliente.com,1040.725,4.915,Infantil,Johanna Spyri,medio,medio
+José Cabrera Garay,cliente140@cliente.com,923.75,4.1,Historia,Hugh Thomas,bajo,medio
+Pedro Cruz García,cliente141@cliente.com,1591.55,5.64,Tecnologia,Andrew Hunt,medio,medio
+Elena Ortiz Espinoza,cliente142@cliente.com,3040.45,10.985,Literatura,Charles C. Mann,alto,alto
+Camila Vidal Rangel,cliente143@cliente.com,712.55,2.37,Tecnologia,Marcus Garrido,bajo,bajo
+Carolina Sánchez Rivera,cliente144@cliente.com,1878.0,7.565,Autoayuda,Ray Bradbury,medio,medio
+Silvia Rivera Cortes,cliente145@cliente.com,4117.125,14.655,Autoayuda,Robert C. Martin,alto,alto
+Leonardo Moreno Rangel,cliente146@cliente.com,85.0,0.31,Misterio,Patricia Cornwell,bajo,bajo
+Diego Ramírez Figueroa,cliente147@cliente.com,222.5,1.025,Historia,Eckhart Tolle,bajo,bajo
+Miguel Mendoza Sánchez,cliente148@cliente.com,1496.575,5.42,Historia,Yuval Noah Harari,medio,alto
+Daniela Cárdenas Sánchez,cliente149@cliente.com,634.25,2.13,Tecnologia,Suzanne Collins,bajo,bajo
+Sergio Bustos Contreras,cliente150@cliente.com,1588.7,5.38,Misterio,Harper Lee,alto,alto
+Florencia Flores Gómez,cliente151@cliente.com,804.6,2.75,Ciencia Ficcion,Napoleon Hill,bajo,medio
+Sebastián Cortes Navarrete,cliente152@cliente.com,133.15,0.51,Tecnologia,Tom Mitchell,bajo,bajo
+Silvio Vidal Bustos,cliente153@cliente.com,4601.675,15.5,Literatura,William Faulkner,alto,alto
+Felipe Zamora Lara,cliente154@cliente.com,325.7,1.18,Autoayuda,Julio Cortazar,bajo,bajo
+Luis Vásquez Fuentes,cliente155@cliente.com,39.9,0.015,Historia,Hugh Thomas,bajo,bajo
+Graciela Reyes Chávez,cliente156@cliente.com,1425.8,4.81,Ciencia Ficcion,Isaac Asimov,bajo,alto
+Roberta Medina Moreno,cliente157@cliente.com,391.45,1.18,Tecnologia,Brandon Sanderson,medio,bajo
+Silvia Salazar Castillo,cliente158@cliente.com,2849.125,8.83,Ciencia Ficcion,L. Frank Baum,medio,alto
+José Rivera Herrera,cliente159@cliente.com,937.7,3.255,Literatura,Franz Kafka,bajo,medio
+José Núñez Ortiz,cliente160@cliente.com,608.65,2.275,Historia,Julio Cortazar,bajo,medio
+Fausto Medina Rangel,cliente161@cliente.com,6.75,0.015,Historia,Jared Diamond,bajo,bajo
+Fernanda Flores Díaz,cliente162@cliente.com,2008.2,7.94,Autoayuda,Suzanne Collins,alto,alto
+Emilio Ibarra Barrera,cliente163@cliente.com,4688.275,15.295,Historia,Jose Saramago,alto,alto
+Constanza Ibarra Contreras,cliente164@cliente.com,4029.9,14.47,Ciencia Ficcion,J.M. Barrie,alto,alto
+Pablo Fuentes Medina,cliente165@cliente.com,1511.875,4.895,Historia,Jared Diamond,medio,medio
+Arturo Ibarra Muñoz,cliente166@cliente.com,4367.025,17.825,Ciencia Ficcion,Patrick Rothfuss,alto,alto
+Patricio Morales Barría,cliente167@cliente.com,1434.6,4.44,Historia,Yuval Noah Harari,medio,medio
+Mónica Fuentes Pizarro,cliente168@cliente.com,2776.6,9.085,Autoayuda,Malcolm Gladwell,bajo,alto
+Roberta Martínez Morales,cliente169@cliente.com,1304.45,4.735,Historia,Jared Diamond,medio,alto
+Sofía Morales Cruz,cliente170@cliente.com,4502.25,14.525,Historia,Yuval Noah Harari,alto,alto
+Beatriz García Martínez,cliente171@cliente.com,2774.35,9.705,Autoayuda,James Clear,alto,alto
+Silvia Torres Zamora,cliente172@cliente.com,5687.8,17.85,Fantasia,J.K. Rowling,alto,alto
+Diego Mendoza García,cliente173@cliente.com,1424.15,4.725,Autoayuda,Paul Maier,medio,medio
+Mauricio Gómez Cruz,cliente174@cliente.com,3225.85,11.345,Autoayuda,Hugh Thomas,alto,alto
+Tomás Prieto Lara,cliente175@cliente.com,867.05,3.17,Fantasia,Mark Twain,medio,medio
+Lorena Rodríguez Espinoza,cliente176@cliente.com,145.8,0.605,Autoayuda,Isabel Allende,bajo,bajo
+Bárbara León González,cliente177@cliente.com,774.6,2.885,Autoayuda,Stuart Russell,bajo,medio
+Sofía Morales González,cliente178@cliente.com,1459.075,4.72,Tecnologia,Andrew Hunt,bajo,bajo
+José Cárdenas Reyes,cliente179@cliente.com,5829.1,21.18,Misterio,Yuval Noah Harari,alto,alto
+Gonzalo Medina Rivera,cliente180@cliente.com,4992.125,17.0,Infantil,Rick Riordan,alto,alto
+Juan Gómez Moreno,cliente181@cliente.com,921.45,3.25,Literatura,Julio Cortazar,bajo,bajo
+Silvia Rivera Ibarra,cliente182@cliente.com,83.2,0.355,Autoayuda,Hugh Thomas,bajo,bajo
+Carmen Morales Muñoz,cliente183@cliente.com,1612.9,6.11,Tecnologia,Aldous Huxley,bajo,medio
+Mónica Núñez Vargas,cliente184@cliente.com,3744.75,13.91,Infantil,E.B. White,alto,alto
+Emilia Pizarro Castillo,cliente185@cliente.com,615.25,1.165,Autoayuda,Hugh Thomas,bajo,bajo
+Eugenio Lara Castillo,cliente186@cliente.com,1748.775,6.255,Ciencia Ficcion,Arthur C. Clarke,bajo,medio
+Pablo Torres Jiménez,cliente187@cliente.com,588.3,2.42,Literatura,Julio Cortazar,bajo,bajo
+Felipe Cruz Salazar,cliente188@cliente.com,884.3,2.905,Fantasia,Johanna Spyri,bajo,medio
+Natalia Rivera Castillo,cliente189@cliente.com,8.55,0.07,Literatura,Malcolm Gladwell,bajo,bajo
+Alejandra Vega Gómez,cliente190@cliente.com,4594.75,15.645,Historia,Bill Bryson,alto,alto
+Oscar Herrera Rivera,cliente191@cliente.com,3.8,0.0,Ciencia Ficcion,Marcus Garrido,bajo,bajo
+Florencia García Gómez,cliente192@cliente.com,600.6,1.945,Historia,Jared Diamond,bajo,bajo
+Valentina Castillo Martínez,cliente193@cliente.com,2681.95,9.16,Tecnologia,Marcus Garrido,bajo,medio
+Javier Vargas Barría,cliente194@cliente.com,4433.3,14.88,Historia,Simon Schama,alto,alto
+Florencia Paredes Salazar,cliente195@cliente.com,3013.1,9.655,Literatura,Bill Bryson,alto,alto
+Regina Barría Herrera,cliente196@cliente.com,451.35,1.61,Fantasia,Franz Kafka,bajo,medio
+Héctor Garay Gómez,cliente197@cliente.com,2259.2,6.78,Fantasia,L. Frank Baum,alto,alto
+Regina Lara Ramírez,cliente198@cliente.com,2273.35,7.785,Ciencia Ficcion,William Gibson,alto,alto
+Felipe Ávila Flores,cliente199@cliente.com,1007.9,3.635,Infantil,Mark Twain,bajo,medio
+Ana Ramírez Figueroa,cliente200@cliente.com,5008.575,17.17,Historia,Bill Bryson,alto,alto
+Isabel Castillo Contreras,cliente201@cliente.com,2089.95,8.09,Autoayuda,Marcus Garrido,medio,medio
+Alberto Moreno Gómez,cliente202@cliente.com,1143.0,4.22,Autoayuda,Carol Dweck,medio,alto
+Fernando Bustos Ramírez,cliente203@cliente.com,2565.8,8.065,Historia,James Clear,alto,alto
+Ana Jara Fuentes,cliente204@cliente.com,4143.1,15.165,Infantil,J.K. Rowling,alto,alto
+Lorena Vega Barría,cliente205@cliente.com,1060.6,3.425,Literatura,Isabel Allende,bajo,medio
+José Herrera García,cliente206@cliente.com,2896.35,10.425,Infantil,Maurice Sendak,alto,alto
+Valentina García García,cliente207@cliente.com,151.8,0.425,Historia,Jared Diamond,bajo,bajo
+Ana Vargas Torres,cliente208@cliente.com,5152.45,17.105,Infantil,J.K. Rowling,alto,alto
+Rodrigo Ávila Reyes,cliente209@cliente.com,629.85,1.775,Historia,Simon Schama,bajo,bajo
+Arturo Morales Lara,cliente210@cliente.com,8.45,0.005,Ciencia Ficcion,Thomas Cormen,bajo,bajo
+Patricio Medina Reyes,cliente211@cliente.com,3314.875,10.35,Literatura,Javier Zarca,medio,alto
+María Salazar Barría,cliente212@cliente.com,726.35,2.64,Literatura,Miguel de Cervantes,bajo,bajo
+Carmen Cárdenas Díaz,cliente213@cliente.com,3195.975,13.535,Infantil,Antoine de Saint-Exupery,alto,alto
+Sebastián Ávila Jara,cliente214@cliente.com,2534.7,7.16,Fantasia,Lewis Carroll,alto,alto
+Tomás Gómez Barrera,cliente215@cliente.com,4148.625,14.245,Historia,Hugh Thomas,alto,alto
+Lorena Espinoza Lara,cliente216@cliente.com,568.85,1.735,Literatura,Joel Dicker,bajo,bajo
+Hugo Guerrero Fuentes,cliente217@cliente.com,5.7,0.02,Historia,Jared Diamond,bajo,bajo
+Carlos Mendoza Morales,cliente218@cliente.com,2925.525,11.48,Infantil,L. Frank Baum,alto,alto
+Patricia Salazar Núñez,cliente219@cliente.com,914.0,3.555,Historia,Jared Diamond,bajo,medio
+Patricia Barrera Sánchez,cliente220@cliente.com,3406.65,9.995,Fantasia,Patrick Rothfuss,alto,alto
+Sofía Díaz Díaz,cliente221@cliente.com,4819.775,18.24,Autoayuda,Stephen Covey,alto,alto
+Graciela Reyes Contreras,cliente222@cliente.com,5688.35,19.775,Autoayuda,Aldous Huxley,alto,alto
+Miguel Jiménez Bravo,cliente223@cliente.com,2752.0,10.515,Infantil,Antoine de Saint-Exupery,medio,alto
+Ramón Ávila Ponce,cliente224@cliente.com,1253.5,3.48,Fantasia,Neil Gaiman,medio,medio
+Ronald Herrera González,cliente225@cliente.com,3760.6,11.76,Historia,Winston Churchill,alto,alto
+Samuel Cruz León,cliente226@cliente.com,4123.55,14.975,Fantasia,Ray Bradbury,alto,alto
+Pedro Herrera Mendoza,cliente227@cliente.com,2956.0,10.76,Literatura,Eckhart Tolle,medio,alto
+Gloria Barrera Díaz,cliente228@cliente.com,102.55,0.345,Misterio,Dan Brown,bajo,bajo
+Leonardo Cruz Cruz,cliente229@cliente.com,2734.625,10.105,Infantil,Patrick Rothfuss,alto,alto
+José Cárdenas Barría,cliente230@cliente.com,365.45,1.575,Historia,Viktor Frankl,bajo,bajo
+Fernanda Muñoz Cruz,cliente231@cliente.com,735.4,2.515,Literatura,James Clear,bajo,medio
+Héctor Figueroa Díaz,cliente232@cliente.com,6159.725,20.07,Fantasia,J.K. Rowling,alto,alto
+Verónica Jiménez Reyes,cliente233@cliente.com,3112.7,11.875,Autoayuda,Malcolm Gladwell,alto,alto
+Patricia Vidal Flores,cliente234@cliente.com,4213.25,13.46,Misterio,Gabriel Garcia Marquez,alto,alto
+Ramón Lara Romero,cliente235@cliente.com,5543.225,20.395,Ciencia Ficcion,Antoine de Saint-Exupery,alto,alto
+Natalia Herrera Garay,cliente236@cliente.com,2693.15,9.315,Literatura,James Clear,medio,alto
+Lucas Ortiz Barría,cliente237@cliente.com,83.85,0.215,Historia,William Faulkner,bajo,bajo
+Beatriz Cárdenas Gómez,cliente238@cliente.com,694.45,2.43,Infantil,Lewis Carroll,bajo,bajo
+Verónica Peralta Montero,cliente239@cliente.com,797.35,3.31,Autoayuda,Franz Kafka,medio,medio
+Iván Flores González,cliente240@cliente.com,1500.15,5.5,Ciencia Ficcion,Marcus Garrido,bajo,medio
+Mónica Prieto Romero,cliente241@cliente.com,1002.475,3.165,Historia,Yuval Noah Harari,bajo,medio
+Diego Bravo Reyes,cliente242@cliente.com,2119.425,7.355,Infantil,Maurice Sendak,medio,alto
+Constanza Guerrero Muñoz,cliente243@cliente.com,3079.55,11.19,Infantil,Lewis Carroll,alto,alto
+Miguel Muñoz Ibarra,cliente244@cliente.com,79.1,0.3,Fantasia,Isabel Allende,bajo,bajo
+Alejandra Figueroa Reyes,cliente245@cliente.com,3388.025,13.41,Ciencia Ficcion,J.M. Barrie,alto,alto
+Gloria Vargas Ortiz,cliente246@cliente.com,1933.325,6.175,Fantasia,Mark Twain,bajo,alto
+Andrea Sánchez Vargas,cliente247@cliente.com,941.925,3.2,Literatura,William Faulkner,bajo,medio
+Emilia Molina Vidal,cliente248@cliente.com,4648.225,17.12,Autoayuda,Gabriel Garcia Marquez,alto,alto
+Daniel Bravo Ávila,cliente249@cliente.com,142.55,0.56,Tecnologia,Dale Carnegie,bajo,bajo
+Jorge Castillo Lara,cliente250@cliente.com,2901.6,9.185,Ciencia Ficcion,Neil Gaiman,alto,alto
+Gloria Rangel Ponce,cliente251@cliente.com,403.85,1.445,Autoayuda,Gabriel Garcia Marquez,bajo,bajo
+Elena Lara Peña,cliente252@cliente.com,2463.925,6.345,Infantil,Patrick Rothfuss,medio,alto
+Alejandro Cortes Díaz,cliente253@cliente.com,4089.45,14.285,Literatura,Agatha Christie,alto,alto
+Alejandra Castillo Bravo,cliente254@cliente.com,3091.825,11.445,Infantil,J.M. Barrie,alto,alto
+Andrés Salazar Montero,cliente255@cliente.com,3907.1,13.93,Autoayuda,Harper Lee,alto,alto
+Fernanda Cruz Prieto,cliente256@cliente.com,864.7,3.205,Fantasia,Rick Riordan,medio,medio
+Regina Soto Peña,cliente257@cliente.com,2401.9,8.575,Infantil,Stanislaw Lem,alto,alto
+Fernanda Reyes Morales,cliente258@cliente.com,1268.5,4.285,Autoayuda,Stephen Covey,medio,medio
+Bárbara Fuentes Chávez,cliente259@cliente.com,4191.55,14.675,Misterio,Thomas Harris,alto,alto
+Javier Romero Ortiz,cliente260@cliente.com,2247.65,7.605,Infantil,Antoine de Saint-Exupery,medio,alto
+Gloria Medina Peña,cliente261@cliente.com,961.975,3.62,Historia,Winston Churchill,bajo,medio
+Carlos López Cruz,cliente262@cliente.com,5177.425,16.45,Infantil,Stanislaw Lem,medio,alto
+Rosa Medina Soto,cliente263@cliente.com,3061.125,11.275,Autoayuda,Carol Dweck,alto,alto
+Andrea Morales Jara,cliente264@cliente.com,2688.25,10.995,Infantil,Orson Scott Card,alto,alto
+Gonzalo González Medina,cliente265@cliente.com,1503.25,5.34,Autoayuda,Juan Rulfo,bajo,medio
+Alberto Ortiz Martínez,cliente266@cliente.com,1369.9,4.995,Literatura,Isabel Allende,alto,alto
+Patricia Moreno Medina,cliente267@cliente.com,4138.325,14.91,Infantil,Orson Scott Card,alto,alto
+Santiago Pizarro Carrasco,cliente268@cliente.com,1103.95,4.805,Autoayuda,Fiodor Dostoievski,bajo,medio
+Ana Vidal Ponce,cliente269@cliente.com,570.675,1.725,Literatura,Bill Bryson,bajo,medio
+Roberta Pizarro Cárdenas,cliente270@cliente.com,3047.6,11.68,Ciencia Ficcion,Antoine de Saint-Exupery,alto,alto
+Carolina García Pérez,cliente271@cliente.com,3627.1,13.14,Literatura,Miguel de Cervantes,alto,alto
+Valentina Muñoz Guerrero,cliente272@cliente.com,617.2,2.16,Ciencia Ficcion,Frank Herbert,bajo,medio
+Juan Guerrero León,cliente273@cliente.com,594.2,1.895,Literatura,Franz Kafka,bajo,medio
+Daniel Rivera Morales,cliente274@cliente.com,4426.7,15.045,Misterio,Dale Carnegie,alto,alto
+Fernando Navarrete Martínez,cliente275@cliente.com,2182.3,8.37,Infantil,L. Frank Baum,bajo,medio
+Alberto Bravo Mendoza,cliente276@cliente.com,901.775,3.02,Literatura,Terence N. D'Altroy,medio,medio
+César Paredes Zamora,cliente277@cliente.com,1773.0,5.725,Historia,Yuval Noah Harari,alto,alto
+Gonzalo Pérez Moreno,cliente278@cliente.com,63.5,0.25,Historia,Jared Diamond,bajo,bajo
+Natalia Castillo Vega,cliente279@cliente.com,704.45,2.34,Literatura,Jack Weatherford,bajo,bajo
+Ronald Mendoza Ortiz,cliente280@cliente.com,1526.45,5.385,Autoayuda,Carol Dweck,bajo,medio
+Alejandra Bravo Peralta,cliente281@cliente.com,118.15,0.375,Tecnologia,Thomas Cormen,bajo,bajo
+Lucas Chávez Guerrero,cliente282@cliente.com,1547.025,5.12,Literatura,Charles Dickens,bajo,bajo
+Manuel Cruz Castillo,cliente283@cliente.com,2687.75,9.36,Misterio,Paula Hawkins,alto,alto
+Ricardo Herrera Jara,cliente284@cliente.com,2275.825,7.935,Ciencia Ficcion,James Clear,medio,alto
+Lucía Cruz Medina,cliente285@cliente.com,1673.2,5.585,Historia,Simon Schama,medio,medio
+Silvia Pizarro Ramírez,cliente286@cliente.com,826.25,2.885,Historia,Miguel de Cervantes,bajo,medio
+Silvia Núñez Vargas,cliente287@cliente.com,4366.625,15.395,Misterio,Paula Hawkins,alto,alto
+Paola Paredes Moreno,cliente288@cliente.com,2011.6,6.455,Tecnologia,Andrew Hunt,medio,alto
+Rodrigo Pérez Reyes,cliente289@cliente.com,762.05,1.725,Historia,Winston Churchill,bajo,bajo
+Augusto Cabrera Díaz,cliente290@cliente.com,4714.5,15.745,Misterio,Yuval Noah Harari,alto,alto
+Carmen Castillo Carrasco,cliente291@cliente.com,3267.925,10.7,Infantil,L. Frank Baum,alto,alto
+Fausto Silva Gómez,cliente292@cliente.com,1881.4,6.355,Tecnologia,Javier Zarca,bajo,bajo
+Emilio Cárdenas Díaz,cliente293@cliente.com,827.675,2.5,Autoayuda,Dale Carnegie,medio,medio
+Hugo Vega Paredes,cliente294@cliente.com,1711.05,6.095,Literatura,Simon Schama,medio,medio
+Luis Rivera Jiménez,cliente295@cliente.com,1809.9,6.525,Autoayuda,Marcus Garrido,medio,alto
+Miguel Guerrero Carrasco,cliente296@cliente.com,224.35,0.975,Literatura,Joel Dicker,bajo,bajo
+Jorge Guerrero García,cliente297@cliente.com,1523.5,5.88,Ciencia Ficcion,Aldous Huxley,medio,medio
+Luis Ibarra Sánchez,cliente298@cliente.com,3460.55,11.795,Misterio,Agatha Christie,alto,alto
+Héctor Muñoz Medina,cliente299@cliente.com,2756.175,10.525,Fantasia,Brandon Sanderson,alto,alto
+Adrián Espinoza Iglesias,cliente300@cliente.com,1962.525,6.18,Autoayuda,Jared Diamond,medio,medio
+Alberto Muñoz Rivera,cliente301@cliente.com,1139.05,3.855,Autoayuda,Jose Saramago,alto,medio
+Emilia Cortes Guerrero,cliente302@cliente.com,4048.675,15.825,Infantil,J.M. Barrie,alto,alto
+Hugo Carrasco Chávez,cliente303@cliente.com,5479.75,17.375,Fantasia,Maurice Sendak,alto,alto
+Mónica Barrera Cruz,cliente304@cliente.com,2813.75,8.93,Historia,Miguel de Cervantes,alto,alto
+Gabriel García Cruz,cliente305@cliente.com,4074.025,12.685,Ciencia Ficcion,William Gibson,alto,alto
+Roberto Ramírez Silva,cliente306@cliente.com,4623.0,16.72,Infantil,E.B. White,alto,alto
+Daniel Vargas García,cliente307@cliente.com,4071.1,14.17,Infantil,Rick Riordan,alto,alto
+Patricia Núñez Morales,cliente308@cliente.com,3159.95,11.78,Fantasia,Lewis Carroll,medio,alto
+Paola Guerrero Castillo,cliente309@cliente.com,1124.65,4.35,Literatura,Patricia Cornwell,bajo,medio
+Jorge Morales Castillo,cliente310@cliente.com,1214.5,4.365,Ciencia Ficcion,Mark Twain,bajo,bajo
+Daniela Pérez Herrera,cliente311@cliente.com,3308.475,11.99,Historia,Malcolm Gladwell,alto,alto
+Pedro Figueroa Martínez,cliente312@cliente.com,75.15,0.32,Literatura,Simon Schama,bajo,bajo
+Daniel Castillo Muñoz,cliente313@cliente.com,2530.75,7.89,Fantasia,Isabel Allende,medio,alto
+Camila Morales Torres,cliente314@cliente.com,1644.35,5.565,Misterio,Gillian Flynn,medio,medio
+Renata Bravo Iglesias,cliente315@cliente.com,2706.425,9.42,Fantasia,Douglas Adams,alto,alto
+Lorena Ibarra Molina,cliente316@cliente.com,2998.225,10.535,Ciencia Ficcion,Mark Twain,alto,alto
+Nicolás Paredes Peña,cliente317@cliente.com,164.25,0.675,Autoayuda,Paulo Coelho,bajo,bajo
+Daniel González Torres,cliente318@cliente.com,5879.9,20.12,Infantil,J.R.R. Tolkien,alto,alto
+Gabriel Cruz Prieto,cliente319@cliente.com,1317.225,4.705,Autoayuda,Paul Maier,medio,medio
+Lorena Vega García,cliente320@cliente.com,1107.825,3.245,Autoayuda,Winston Churchill,bajo,medio
+María Rodríguez Ramírez,cliente321@cliente.com,3009.3,11.08,Autoayuda,Malcolm Gladwell,alto,alto
+Raúl Garay Sánchez,cliente322@cliente.com,873.1,3.165,Literatura,Terence N. D'Altroy,bajo,medio
+Carmen Garay Lara,cliente323@cliente.com,473.4,1.805,Literatura,Juan Rulfo,bajo,medio
+Gabriel Soto Vidal,cliente324@cliente.com,3379.125,12.065,Infantil,E.B. White,alto,alto
+Andrés Ortiz Ibarra,cliente325@cliente.com,543.575,1.97,Infantil,Johanna Spyri,medio,medio
+Natalia Zamora Rodríguez,cliente326@cliente.com,2293.05,7.965,Historia,Bill Bryson,alto,alto
+Rosa Medina Ortiz,cliente327@cliente.com,1158.775,4.0,Tecnologia,Javier Zarca,medio,medio
+Andrea Herrera Cruz,cliente328@cliente.com,2936.9,9.4,Infantil,Rick Riordan,alto,alto
+María Guerrero Reyes,cliente329@cliente.com,4799.55,15.805,Literatura,Neil Gaiman,alto,alto
+Fernanda Carrasco Dominguez,cliente330@cliente.com,3568.875,11.44,Fantasia,L. Frank Baum,alto,alto
+Carlos Rivera Prieto,cliente331@cliente.com,2149.05,6.43,Fantasia,Antoine de Saint-Exupery,medio,alto
+Mónica Morales Martínez,cliente332@cliente.com,4751.325,16.84,Ciencia Ficcion,Arthur C. Clarke,alto,alto
+Rosa López Herrera,cliente333@cliente.com,1182.4,3.955,Historia,Jared Diamond,medio,medio
+Elena Vidal Flores,cliente334@cliente.com,4574.4,16.64,Autoayuda,William Gibson,alto,alto
+Sebastián González Barrera,cliente335@cliente.com,533.1,1.79,Tecnologia,Stuart Russell,bajo,bajo
+Vicente Bustos Núñez,cliente336@cliente.com,934.1,2.925,Fantasia,Isabel Allende,bajo,medio
+Alejandra Romero Vega,cliente337@cliente.com,517.15,1.795,Autoayuda,Fiodor Dostoievski,bajo,bajo
+Julio González Lara,cliente338@cliente.com,4727.925,12.775,Fantasia,J.R.R. Tolkien,alto,alto
+César Núñez Ponce,cliente339@cliente.com,878.05,3.105,Literatura,Miguel de Cervantes,bajo,bajo
+Fausto Vega Moreno,cliente340@cliente.com,1884.975,6.04,Ciencia Ficcion,Orson Scott Card,medio,alto
+Gloria Rivera Bustos,cliente341@cliente.com,1926.5,7.395,Autoayuda,Harper Lee,alto,alto
+Gabriel Chávez Morales,cliente342@cliente.com,1065.85,3.44,Literatura,Juan Rulfo,bajo,medio
+Fernando Díaz Vásquez,cliente343@cliente.com,228.4,1.075,Autoayuda,Jared Diamond,bajo,bajo
+Leonardo Lara Cruz,cliente344@cliente.com,387.1,1.53,Tecnologia,Erich Gamma,bajo,bajo
+Carmen Sánchez Vargas,cliente345@cliente.com,2979.875,10.48,Historia,Fiodor Dostoievski,alto,alto
+Roberto Chávez Ortiz,cliente346@cliente.com,5816.325,18.985,Misterio,Jose Saramago,alto,alto
+Silvia Jara Zamora,cliente347@cliente.com,454.975,1.625,Ciencia Ficcion,Suzanne Collins,bajo,bajo
+Eugenio Navarrete García,cliente348@cliente.com,380.275,1.17,Historia,Fiodor Dostoievski,bajo,bajo
+Valentina Contreras López,cliente349@cliente.com,3820.875,12.945,Literatura,Jojo Moyes,alto,alto
+Felipe Torres Pérez,cliente350@cliente.com,1380.1,4.795,Historia,Jared Diamond,medio,medio
+Ernesto Iglesias Flores,cliente351@cliente.com,953.1,3.57,Autoayuda,Napoleon Hill,medio,medio
+Brandon Gómez Gómez,cliente352@cliente.com,3271.3,11.49,Literatura,Viktor Frankl,alto,alto
+Lucas Castillo Peralta,cliente353@cliente.com,279.4,0.815,Historia,Jared Diamond,bajo,bajo
+Roberto Espinoza Dominguez,cliente354@cliente.com,5266.85,17.84,Infantil,Rick Riordan,alto,alto
+Santiago Garay Bustos,cliente355@cliente.com,979.85,3.92,Literatura,William Faulkner,bajo,medio
+Beatriz González Bravo,cliente356@cliente.com,1069.55,4.205,Autoayuda,Stephen Covey,bajo,medio
+Bárbara Bravo Flores,cliente357@cliente.com,1475.025,5.635,Literatura,Javier Zarca,medio,medio
+Matías Reyes Ávila,cliente358@cliente.com,4204.2,12.47,Infantil,Johanna Spyri,alto,alto
+Daniel Mendoza Barrera,cliente359@cliente.com,55.25,0.21,Literatura,Malcolm Gladwell,bajo,bajo
+Mario Romero Castillo,cliente360@cliente.com,2015.5,6.41,Historia,Winston Churchill,medio,alto
+Renata Lara Pizarro,cliente361@cliente.com,834.3,4.775,Infantil,Antoine de Saint-Exupery,bajo,bajo
+Ana Mendoza Vargas,cliente362@cliente.com,4363.325,15.43,Tecnologia,Andrew Hunt,alto,alto
+Ricardo Montero García,cliente363@cliente.com,4625.525,13.73,Fantasia,Ray Bradbury,alto,alto
+Patricia Contreras Montero,cliente364@cliente.com,3572.75,11.73,Ciencia Ficcion,Suzanne Collins,alto,alto
+Laura Jara Rivera,cliente365@cliente.com,1913.15,6.395,Fantasia,Brandon Sanderson,medio,alto
+Renata Vidal Espinoza,cliente366@cliente.com,207.15,0.675,Historia,Hugh Thomas,bajo,bajo
+Claudio Medina Martínez,cliente367@cliente.com,3974.825,13.3,Infantil,Neil Gaiman,alto,alto
+Roberta Paredes Lara,cliente368@cliente.com,2483.0,7.28,Autoayuda,Hugh Thomas,medio,medio
+Patricio Pérez Soto,cliente369@cliente.com,3226.1,10.55,Tecnologia,Stuart Russell,alto,alto
+Manuel Chávez Flores,cliente370@cliente.com,2182.55,6.99,Tecnologia,Paul Maier,bajo,medio
+Carmen Ortiz Flores,cliente371@cliente.com,753.8,3.13,Autoayuda,Charles C. Mann,bajo,medio
+Mónica Salazar Salazar,cliente372@cliente.com,948.25,3.295,Fantasia,L. Frank Baum,medio,medio
+Beatriz Vega Muñoz,cliente373@cliente.com,2188.05,6.725,Historia,Hugh Thomas,medio,medio
+Ronald Cortes Vargas,cliente374@cliente.com,1606.175,5.525,Infantil,Isaac Asimov,medio,medio
+Andrés Ortiz Ortiz,cliente375@cliente.com,1154.15,4.32,Ciencia Ficcion,Marcus Garrido,bajo,medio
+Mario Reyes Morales,cliente376@cliente.com,1599.55,5.12,Historia,Charles C. Mann,medio,medio
+Héctor Bravo Lara,cliente377@cliente.com,2151.95,7.49,Literatura,Jose Saramago,medio,alto
+Ernesto Torres Iglesias,cliente378@cliente.com,953.7,2.91,Literatura,Jared Diamond,medio,medio
+Bárbara Garay Cabrera,cliente379@cliente.com,765.4,2.815,Autoayuda,Terence N. D'Altroy,bajo,bajo
+Ricardo Cruz Medina,cliente380@cliente.com,5598.65,19.305,Fantasia,C.S. Lewis,alto,alto
+Ernesto Cárdenas Salazar,cliente381@cliente.com,4279.375,15.18,Historia,Hugh Thomas,alto,alto
+Esteban Jara Pérez,cliente382@cliente.com,1487.8,5.575,Literatura,Isabel Allende,medio,medio
+Ana Ibarra Montero,cliente383@cliente.com,505.125,1.51,Ciencia Ficcion,Aldous Huxley,medio,bajo
+Oscar Guerrero López,cliente384@cliente.com,1001.075,3.43,Historia,Miguel de Cervantes,medio,medio
+Emilio Vega Prieto,cliente385@cliente.com,4914.0,17.125,Infantil,Lewis Carroll,alto,alto
+Camila Rivera Garay,cliente386@cliente.com,4487.7,15.88,Historia,Yuval Noah Harari,alto,alto
+Carlos García Reyes,cliente387@cliente.com,3465.9,11.655,Literatura,Fiodor Dostoievski,alto,alto
+Ernesto Dominguez Sánchez,cliente388@cliente.com,3553.375,11.955,Ciencia Ficcion,L. Frank Baum,alto,alto
+Diego Ortiz Lara,cliente389@cliente.com,5755.8,19.86,Autoayuda,Gabriel Garcia Marquez,alto,alto
+Gloria Núñez Vásquez,cliente390@cliente.com,1717.9,5.48,Misterio,Winston Churchill,medio,medio
+Ramón Pizarro Herrera,cliente391@cliente.com,30.35,0.105,Tecnologia,Thomas Cormen,bajo,bajo
+Silvia López Díaz,cliente392@cliente.com,3957.35,15.45,Literatura,Jorge Luis Borges,alto,alto
+Daniela Jiménez Bravo,cliente393@cliente.com,1198.15,4.715,Literatura,Franz Kafka,medio,bajo
+Daniela Contreras Sánchez,cliente394@cliente.com,3395.7,11.115,Misterio,Gabriel Garcia Marquez,alto,alto
+Andrea Salazar García,cliente395@cliente.com,1009.05,3.365,Literatura,Miguel de Cervantes,bajo,medio
+Matías Cruz Espinoza,cliente396@cliente.com,213.45,0.68,Literatura,Jared Diamond,bajo,bajo
+Alejandro Díaz Bustos,cliente397@cliente.com,311.85,1.065,Historia,Jack Weatherford,bajo,bajo
+Marcelo Chávez Romero,cliente398@cliente.com,217.5,0.805,Historia,Malcolm Gladwell,bajo,bajo
+Rodrigo Rivera Pizarro,cliente399@cliente.com,1839.6,5.9,Autoayuda,Terence N. D'Altroy,medio,alto
+Ricardo Ortiz Lara,cliente400@cliente.com,1678.25,6.245,Autoayuda,Suzanne Collins,medio,medio
+Paola Reyes Rangel,cliente401@cliente.com,1548.55,5.28,Literatura,Julio Cortazar,bajo,medio
+Roberto Cabrera Fuentes,cliente402@cliente.com,4078.65,13.555,Literatura,Miguel de Cervantes,alto,alto
+Alejandra Guerrero Pizarro,cliente403@cliente.com,6939.55,21.98,Historia,Yuval Noah Harari,alto,alto
+Natalia Peralta Sánchez,cliente404@cliente.com,6657.1,25.71,Historia,Julio Cortazar,alto,alto
+Renata Cruz Torres,cliente405@cliente.com,950.95,3.85,Misterio,Agatha Christie,medio,medio
+Leonardo Morales Rangel,cliente406@cliente.com,1133.85,3.985,Ciencia Ficcion,William Gibson,bajo,medio
+Laura Fuentes Barrera,cliente407@cliente.com,230.575,1.085,Literatura,Charles Dickens,bajo,medio
+Samuel Peralta Cortes,cliente408@cliente.com,2597.975,7.655,Fantasia,C.S. Lewis,medio,alto
+Roberta Herrera Ortiz,cliente409@cliente.com,690.2,2.375,Ciencia Ficcion,William Gibson,medio,medio
+Pedro Torres Peña,cliente410@cliente.com,101.0,0.35,Tecnologia,Tom Mitchell,bajo,bajo
+Leonardo López Vargas,cliente411@cliente.com,1004.75,3.8,Ciencia Ficcion,Marcus Garrido,medio,alto
+Gloria Bravo Pizarro,cliente412@cliente.com,4274.925,15.76,Fantasia,J.R.R. Tolkien,alto,alto
+Arturo Núñez López,cliente413@cliente.com,1138.85,4.275,Tecnologia,Paul Maier,medio,medio
+Vicente Morales Cortes,cliente414@cliente.com,3990.55,13.33,Historia,Miguel de Cervantes,alto,alto
+Brandon Mendoza Molina,cliente415@cliente.com,4744.65,16.02,Ciencia Ficcion,L. Frank Baum,alto,alto
+Fernando Navarrete Rivera,cliente416@cliente.com,340.7,1.69,Infantil,Maurice Sendak,bajo,bajo
+Florencia Cárdenas Gómez,cliente417@cliente.com,2827.4,9.795,Infantil,E.B. White,medio,alto
+Carmen Rodríguez Ortiz,cliente418@cliente.com,2127.1,6.56,Autoayuda,Napoleon Hill,alto,medio
+Carolina Díaz Moreno,cliente419@cliente.com,4108.1,14.825,Autoayuda,Gabriel Garcia Marquez,alto,alto
+Fernando Núñez Bravo,cliente420@cliente.com,1162.2,3.73,Autoayuda,Jack Weatherford,bajo,medio
+Ana Jara Medina,cliente421@cliente.com,1133.7,4.085,Historia,Juan Rulfo,medio,bajo
+Beatriz Herrera Contreras,cliente422@cliente.com,564.15,1.75,Historia,Jose Saramago,medio,bajo
+Raúl Paredes Bustos,cliente423@cliente.com,432.8,1.4,Autoayuda,Jared Diamond,bajo,bajo
+Andrea Cabrera Vidal,cliente424@cliente.com,5351.55,17.09,Historia,Charles C. Mann,alto,alto
+Brandon Prieto Jiménez,cliente425@cliente.com,907.65,4.04,Historia,Hugh Thomas,bajo,medio
+José Díaz Jiménez,cliente426@cliente.com,4284.275,14.025,Ciencia Ficcion,Stanislaw Lem,alto,alto
+Sofía Paredes Castillo,cliente427@cliente.com,1267.65,5.575,Literatura,Malcolm Gladwell,medio,medio
+Nicolás Morales Barría,cliente428@cliente.com,739.65,3.035,Literatura,Stephen Covey,bajo,medio
+Alberto Medina Flores,cliente429@cliente.com,543.4,1.615,Ciencia Ficcion,Isaac Asimov,bajo,bajo
+Beatriz García Rivera,cliente430@cliente.com,826.9,3.115,Literatura,Javier Zarca,bajo,bajo
+Emilio Vargas Garay,cliente431@cliente.com,918.65,3.4,Literatura,William Faulkner,bajo,medio
+Pablo Barrera Jiménez,cliente432@cliente.com,539.05,2.135,Historia,Jack Weatherford,medio,medio
+Sofía Morales Dominguez,cliente433@cliente.com,582.0,2.325,Historia,Terence N. D'Altroy,bajo,bajo
+Mario Gómez Guerrero,cliente434@cliente.com,2576.05,9.09,Historia,Jose Saramago,medio,alto
+Jorge Sánchez Ávila,cliente435@cliente.com,1625.825,6.235,Autoayuda,Eckhart Tolle,medio,alto
+Rodrigo Rangel Navarrete,cliente436@cliente.com,1983.1,6.49,Literatura,Simon Schama,medio,alto
+José Ibarra Pérez,cliente437@cliente.com,4181.9,13.925,Historia,Hugh Thomas,medio,alto
+Jorge Cruz Dominguez,cliente438@cliente.com,127.6,0.34,Misterio,Patricia Cornwell,bajo,bajo
+Constanza López Chávez,cliente439@cliente.com,259.1,0.875,Literatura,Simon Schama,bajo,bajo
+Silvia Medina Salazar,cliente440@cliente.com,4694.375,16.43,Tecnologia,Stuart Russell,alto,alto
+Patricia Díaz Guerrero,cliente441@cliente.com,1065.65,2.88,Fantasia,C.S. Lewis,medio,bajo
+Bárbara Muñoz Martínez,cliente442@cliente.com,2534.75,8.59,Infantil,Neil Gaiman,alto,alto
+Leonardo Cruz Chávez,cliente443@cliente.com,3770.95,12.495,Historia,Gabriel Garcia Marquez,alto,alto
+Camila González Rodríguez,cliente444@cliente.com,1139.55,4.015,Autoayuda,Viktor Frankl,medio,medio
+Mario Vargas Bravo,cliente445@cliente.com,1051.875,3.71,Misterio,Gillian Flynn,bajo,medio
+Jorge Moreno Martínez,cliente446@cliente.com,4271.45,15.84,Infantil,Arthur C. Clarke,alto,alto
+Mónica Ponce Bravo,cliente447@cliente.com,891.0,2.89,Tecnologia,Andrew Hunt,medio,bajo
+Roberto Torres Ortiz,cliente448@cliente.com,491.7,1.685,Historia,James Clear,bajo,medio
+Pedro Silva Medina,cliente449@cliente.com,1006.4,3.96,Literatura,Charles Dickens,bajo,medio
+Carlos Chávez Chávez,cliente450@cliente.com,2329.1,7.18,Fantasia,Antoine de Saint-Exupery,alto,alto
+Oscar Lara Medina,cliente451@cliente.com,66.9,0.33,Historia,Jared Diamond,bajo,bajo
+Jorge Jara Barría,cliente452@cliente.com,2493.75,8.225,Tecnologia,Stuart Russell,alto,alto
+Emilia Cortes Chávez,cliente453@cliente.com,4268.6,16.02,Fantasia,J.M. Barrie,alto,alto
+Víctor Sánchez Vásquez,cliente454@cliente.com,532.4,2.11,Autoayuda,Malcolm Gladwell,bajo,bajo
+Fernando Barrera Salazar,cliente455@cliente.com,1247.1,4.255,Historia,Jack Weatherford,bajo,medio
+José Contreras Reyes,cliente456@cliente.com,836.05,2.76,Autoayuda,Dale Carnegie,medio,bajo
+Alberto Herrera Ramírez,cliente457@cliente.com,3446.375,12.59,Fantasia,Arthur C. Clarke,alto,alto
+Andrea Díaz Bravo,cliente458@cliente.com,904.65,2.45,Historia,Paula Hawkins,bajo,bajo
+Bárbara Lara Díaz,cliente459@cliente.com,1673.175,6.63,Historia,Eckhart Tolle,medio,alto
+Renata Mendoza López,cliente460@cliente.com,4316.2,16.74,Autoayuda,Viktor Frankl,alto,alto
+Elena Peralta Ortiz,cliente461@cliente.com,5756.025,18.325,Infantil,Frank Herbert,alto,alto
+Daniela Moreno Navarrete,cliente462@cliente.com,5305.225,18.365,Ciencia Ficcion,J.R.R. Tolkien,alto,alto
+Ricardo Espinoza Barría,cliente463@cliente.com,159.9,0.69,Historia,Franz Kafka,bajo,bajo
+Constanza Garay Bustos,cliente464@cliente.com,1171.95,4.28,Literatura,Stephen Covey,medio,medio
+Augusto Figueroa Reyes,cliente465@cliente.com,3120.825,12.76,Literatura,Jojo Moyes,alto,alto
+Carmen Cabrera Torres,cliente466@cliente.com,565.55,2.24,Literatura,William Faulkner,bajo,medio
+Elena Sánchez Chávez,cliente467@cliente.com,101.2,0.405,Misterio,Douglas Preston,bajo,bajo
+Hugo Martínez Navarrete,cliente468@cliente.com,212.45,0.75,Tecnologia,William Gibson,bajo,bajo
+Beatriz Barría Molina,cliente469@cliente.com,5434.775,18.355,Fantasia,Orson Scott Card,alto,alto
+Patricia Montero Morales,cliente470@cliente.com,4280.975,14.73,Infantil,Johanna Spyri,alto,alto
+Daniel Jiménez Muñoz,cliente471@cliente.com,3694.825,12.395,Fantasia,J.M. Barrie,alto,alto
+Raúl Díaz Garay,cliente472@cliente.com,1873.1,5.91,Autoayuda,Marie Kondo,medio,medio
+Elena Espinoza García,cliente473@cliente.com,5316.55,19.375,Infantil,J.R.R. Tolkien,alto,alto
+Marcos García Torres,cliente474@cliente.com,813.5,3.175,Historia,Marie Kondo,bajo,medio
+Ricardo Jara Jiménez,cliente475@cliente.com,1196.05,4.875,Autoayuda,Marie Kondo,medio,medio
+Fernanda Ortiz Herrera,cliente476@cliente.com,4648.75,15.405,Fantasia,Aldous Huxley,alto,alto
+Patricio Ibarra Rangel,cliente477@cliente.com,2840.9,10.24,Historia,Winston Churchill,alto,alto
+Andrea Espinoza Rodríguez,cliente478@cliente.com,438.95,1.49,Tecnologia,Tom Mitchell,bajo,bajo
+Jorge López Vargas,cliente479@cliente.com,4774.8,13.915,Fantasia,J.R.R. Tolkien,medio,alto
+Marcos Montero Cabrera,cliente480@cliente.com,700.6,2.485,Autoayuda,Viktor Frankl,bajo,bajo
+Samuel Herrera Díaz,cliente481@cliente.com,563.575,1.74,Tecnologia,Brandon Sanderson,bajo,bajo
+Lorena Vargas Rivera,cliente482@cliente.com,1426.05,4.16,Literatura,Jared Diamond,medio,medio
+Valeria Silva Rivera,cliente483@cliente.com,1376.35,6.48,Historia,Simon Schama,medio,medio
+Marcelo Díaz Jiménez,cliente484@cliente.com,3485.75,12.38,Autoayuda,James Clear,alto,alto
+Valentina Ortiz Rivera,cliente485@cliente.com,2904.025,10.32,Infantil,Stanislaw Lem,alto,alto
+Hugo Gómez Herrera,cliente486@cliente.com,678.175,2.16,Tecnologia,Winston Churchill,bajo,bajo
+Gonzalo Cruz Ponce,cliente487@cliente.com,4256.775,14.37,Fantasia,Isabel Allende,alto,alto
+Laura Rivera León,cliente488@cliente.com,832.0,3.27,Historia,Charles Dickens,medio,medio
+Camila Guerrero Muñoz,cliente489@cliente.com,1131.025,4.005,Literatura,Julio Cortazar,bajo,medio
+Antonella Rangel Peralta,cliente490@cliente.com,879.35,3.895,Fantasia,C.S. Lewis,bajo,medio
+Miguel Paredes Sánchez,cliente491@cliente.com,1408.05,4.6,Misterio,Thomas Harris,medio,medio
+Camila Herrera Garay,cliente492@cliente.com,1559.55,4.725,Literatura,Miguel de Cervantes,medio,medio
+Pedro Espinoza Ramírez,cliente493@cliente.com,2552.375,7.745,Fantasia,Maurice Sendak,medio,alto
+Lorena López Guerrero,cliente494@cliente.com,5261.95,19.995,Ciencia Ficcion,J.K. Rowling,alto,alto
+Pedro Soto Torres,cliente495@cliente.com,448.15,1.595,Historia,William Faulkner,bajo,bajo
+Andrea Chávez Moreno,cliente496@cliente.com,220.5,1.485,Misterio,Douglas Preston,bajo,bajo
+Martina López Gómez,cliente497@cliente.com,1622.25,4.925,Fantasia,C.S. Lewis,alto,alto
+Sofía Díaz Ávila,cliente498@cliente.com,1.25,0.015,Fantasia,Isabel Allende,bajo,bajo
+Carlos Rivera Vega,cliente499@cliente.com,1516.9,5.68,Ciencia Ficcion,Napoleon Hill,bajo,alto
+Camila Cruz González,cliente500@cliente.com,1099.25,4.22,Autoayuda,Carol Dweck,bajo,medio
+Ricardo Paredes Herrera,cliente501@cliente.com,3839.075,13.805,Historia,Jose Saramago,alto,alto
+Silvia Morales Ponce,cliente502@cliente.com,2319.9,6.915,Autoayuda,Orson Scott Card,bajo,medio
+Santiago Pérez Dominguez,cliente503@cliente.com,1979.55,6.145,Ciencia Ficcion,Frank Herbert,medio,alto
+María Zamora Jara,cliente504@cliente.com,2222.7,7.355,Infantil,Patrick Rothfuss,alto,alto
+Elena Vargas Torres,cliente505@cliente.com,37.9,0.15,Autoayuda,Paulo Coelho,bajo,bajo
+Antonella López Ortiz,cliente506@cliente.com,577.75,2.435,Historia,Charles Dickens,bajo,medio
+Marcelo Silva Herrera,cliente507@cliente.com,564.8,1.705,Literatura,Julio Cortazar,bajo,bajo
+Camila Lara Medina,cliente508@cliente.com,876.55,3.21,Fantasia,Stanislaw Lem,bajo,medio
+Diego Moreno Chávez,cliente509@cliente.com,4961.925,17.83,Infantil,Arthur C. Clarke,alto,alto
+Ana Morales Cárdenas,cliente510@cliente.com,2499.725,9.06,Infantil,Orson Scott Card,alto,alto
+María Jara Flores,cliente511@cliente.com,6759.875,20.14,Fantasia,Neil Gaiman,alto,alto
+Ernesto Zamora Guerrero,cliente512@cliente.com,1267.65,4.86,Historia,Miguel de Cervantes,medio,alto
+Paola Vargas Cortes,cliente513@cliente.com,684.9,2.215,Tecnologia,Thomas Cormen,bajo,bajo
+Tomás Castillo Muñoz,cliente514@cliente.com,3183.725,9.985,Autoayuda,Malcolm Gladwell,medio,alto
+Matías Núñez Carrasco,cliente515@cliente.com,5068.5,16.21,Tecnologia,Robert C. Martin,alto,alto
+Eduardo Soto García,cliente516@cliente.com,696.65,2.565,Misterio,Dan Brown,bajo,medio
+Beatriz Cabrera Guerrero,cliente517@cliente.com,788.85,2.46,Historia,Miguel de Cervantes,bajo,medio
+Patricia Espinoza Lara,cliente518@cliente.com,4695.625,14.535,Tecnologia,William Gibson,alto,alto
+Bárbara Garay Medina,cliente519@cliente.com,735.95,2.58,Autoayuda,Eckhart Tolle,medio,medio
+Gonzalo Núñez García,cliente520@cliente.com,599.325,2.73,Infantil,Roald Dahl,bajo,medio
+Mónica Ibarra Barría,cliente521@cliente.com,1137.25,3.77,Fantasia,Neil Gaiman,bajo,medio
+Beatriz Flores Fuentes,cliente522@cliente.com,710.9,2.38,Tecnologia,James Clear,medio,medio
+Fernanda Castillo Barrera,cliente523@cliente.com,2627.85,9.285,Fantasia,Brandon Sanderson,alto,alto
+Graciela Moreno Medina,cliente524@cliente.com,3337.7,13.51,Infantil,Rick Riordan,alto,alto
+Graciela Castillo Castillo,cliente525@cliente.com,5159.775,18.67,Infantil,J.K. Rowling,alto,alto
+Adrián Ibarra Cabrera,cliente526@cliente.com,3867.875,14.11,Historia,Napoleon Hill,alto,alto
+Silvia Fuentes Rodríguez,cliente527@cliente.com,743.15,2.51,Autoayuda,Paulo Coelho,medio,alto
+Elena Jiménez Pérez,cliente528@cliente.com,2041.35,6.735,Infantil,Patrick Rothfuss,alto,alto
+Alejandra Herrera Guerrero,cliente529@cliente.com,5266.575,18.13,Ciencia Ficcion,Aldous Huxley,medio,alto
+Miguel Sánchez Garay,cliente530@cliente.com,3158.6,12.115,Fantasia,Lewis Carroll,medio,alto
+Julio García Chávez,cliente531@cliente.com,1863.025,6.0,Historia,Terence N. D'Altroy,bajo,bajo
+Daniela Cruz Martínez,cliente532@cliente.com,3037.425,11.005,Ciencia Ficcion,J.M. Barrie,alto,alto
+Graciela Rivera Contreras,cliente533@cliente.com,2205.2,7.85,Autoayuda,Paulo Coelho,medio,alto
+Ricardo Figueroa Jiménez,cliente534@cliente.com,124.9,0.45,Historia,Hugh Thomas,bajo,bajo
+Florencia Soto Guerrero,cliente535@cliente.com,3702.25,12.585,Literatura,Eckhart Tolle,medio,alto
+Esteban Guerrero Chávez,cliente536@cliente.com,1478.15,4.93,Literatura,Franz Kafka,medio,medio
+María Jara Moreno,cliente537@cliente.com,687.85,2.95,Literatura,Harper Lee,bajo,bajo
+Emilia Cruz Lara,cliente538@cliente.com,1275.975,4.51,Infantil,L. Frank Baum,bajo,medio
+Rosa Díaz Gómez,cliente539@cliente.com,4224.65,14.555,Tecnologia,Javier Zarca,alto,alto
+César Rivera Muñoz,cliente540@cliente.com,684.75,2.025,Historia,Jared Diamond,medio,medio
+Andrés Jiménez Dominguez,cliente541@cliente.com,2214.25,9.265,Infantil,Roald Dahl,medio,alto
+Jorge Flores Gómez,cliente542@cliente.com,952.075,2.945,Historia,Dan Brown,bajo,medio
+Gloria Zamora González,cliente543@cliente.com,1068.4,3.535,Historia,Simon Schama,medio,medio
+Miguel Sánchez Gómez,cliente544@cliente.com,4287.7,13.64,Ciencia Ficcion,Stanislaw Lem,alto,alto
+Héctor Vásquez Iglesias,cliente545@cliente.com,1065.55,4.045,Historia,Isabel Allende,bajo,medio
+Patricia Ortiz Núñez,cliente546@cliente.com,7047.75,22.575,Fantasia,C.S. Lewis,alto,alto
+Paola Cruz Herrera,cliente547@cliente.com,840.05,3.245,Historia,Jared Diamond,bajo,bajo
+Eugenio Rodríguez Rodríguez,cliente548@cliente.com,611.225,2.24,Historia,Hugh Thomas,medio,medio
+Daniel Sánchez Rivera,cliente549@cliente.com,588.725,1.58,Historia,Joel Dicker,bajo,medio
+Eduardo Mendoza Flores,cliente550@cliente.com,5364.2,20.27,Infantil,Johanna Spyri,alto,alto
+Andrea García Contreras,cliente551@cliente.com,627.7,2.365,Literatura,Juan Rulfo,medio,medio
+Kevin Lara Bravo,cliente552@cliente.com,3376.925,11.34,Literatura,Miguel de Cervantes,alto,alto
+Camila Salazar Chávez,cliente553@cliente.com,1796.15,5.275,Fantasia,Neil Gaiman,bajo,medio
+Matías Prieto Rodríguez,cliente554@cliente.com,313.0,1.305,Historia,Franz Kafka,bajo,bajo
+Fausto Martínez Barrera,cliente555@cliente.com,5578.4,19.235,Tecnologia,William Gibson,alto,alto
+Javier Molina Reyes,cliente556@cliente.com,2780.225,9.865,Historia,Malcolm Gladwell,medio,alto
+Fernanda Lara Jiménez,cliente557@cliente.com,705.9,2.815,Literatura,Bill Bryson,bajo,bajo
+Rodrigo Soto Lara,cliente558@cliente.com,1193.2,4.185,Literatura,Simon Schama,medio,medio
+Andrés Dominguez González,cliente559@cliente.com,3888.85,13.22,Autoayuda,Dale Carnegie,alto,alto
+Raúl Muñoz Medina,cliente560@cliente.com,507.0,1.83,Fantasia,Arthur C. Clarke,medio,alto
+Sofía Contreras Prieto,cliente561@cliente.com,2762.7,8.47,Ciencia Ficcion,James Clear,alto,alto
+Manuel Mendoza Díaz,cliente562@cliente.com,574.8,1.85,Literatura,Julio Cortazar,bajo,medio
+Beatriz Ibarra Salazar,cliente563@cliente.com,1398.125,4.775,Historia,Yuval Noah Harari,medio,medio
+Miguel Cruz Sánchez,cliente564@cliente.com,3000.8,11.085,Misterio,Thomas Harris,alto,alto
+Camila Sánchez Soto,cliente565@cliente.com,3583.075,11.77,Historia,Jared Diamond,alto,alto
+Andrea Flores Soto,cliente566@cliente.com,3825.75,12.96,Historia,Yuval Noah Harari,alto,alto
+Verónica Silva Dominguez,cliente567@cliente.com,381.15,1.395,Misterio,Paula Hawkins,bajo,bajo
+Luis Flores Mendoza,cliente568@cliente.com,327.05,1.185,Literatura,Patricia Cornwell,bajo,bajo
+Iván Medina Prieto,cliente569@cliente.com,2192.25,7.835,Infantil,Johanna Spyri,alto,alto
+Daniela Sánchez Ávila,cliente570@cliente.com,1199.55,4.665,Tecnologia,Marie Kondo,medio,medio
+Alberto Flores López,cliente571@cliente.com,903.825,3.505,Tecnologia,Javier Zarca,bajo,medio
+Sofía Barrera Soto,cliente572@cliente.com,1974.35,7.22,Autoayuda,Juan Rulfo,medio,alto
+Valeria Vargas García,cliente573@cliente.com,300.3,1.09,Literatura,Harper Lee,bajo,medio
+Patricio Soto Cortes,cliente574@cliente.com,3249.825,12.235,Fantasia,Lewis Carroll,alto,alto
+Ricardo Martínez Montero,cliente575@cliente.com,93.7,0.335,Misterio,Paula Hawkins,bajo,bajo
+Marcelo Ortiz Iglesias,cliente576@cliente.com,1073.525,4.41,Misterio,Paula Hawkins,bajo,bajo
+Renata Vargas Vásquez,cliente577@cliente.com,4172.65,13.79,Literatura,Jojo Moyes,alto,alto
+Rosa Barría Ramírez,cliente578@cliente.com,1705.4,6.955,Historia,Bill Bryson,medio,alto
+Felipe Zamora Sánchez,cliente579@cliente.com,6805.325,22.16,Autoayuda,Ray Bradbury,alto,alto
+César López Rangel,cliente580@cliente.com,3775.325,12.43,Historia,Malcolm Gladwell,alto,alto
+Paola Ortiz Contreras,cliente581@cliente.com,1090.35,3.11,Fantasia,Frank Herbert,bajo,medio
+Gabriel Muñoz Pérez,cliente582@cliente.com,1275.25,4.91,Infantil,J.M. Barrie,medio,alto
+Graciela Chávez Cruz,cliente583@cliente.com,210.65,0.86,Historia,Charles C. Mann,bajo,bajo
+Adrián Vargas Montero,cliente584@cliente.com,3444.0,11.7,Misterio,Thomas Harris,alto,alto
+Patricia Rivera Muñoz,cliente585@cliente.com,1474.5,5.485,Ciencia Ficcion,Frank Herbert,medio,alto
+Carlos Garay Díaz,cliente586@cliente.com,2621.6,9.17,Historia,Julio Cortazar,medio,alto
+Andrea Medina Vargas,cliente587@cliente.com,5096.5,18.805,Infantil,E.B. White,alto,alto
+Nicolás Rivera Guerrero,cliente588@cliente.com,668.15,2.115,Historia,Jared Diamond,bajo,medio
+Diego Ponce Pizarro,cliente589@cliente.com,2185.7,6.94,Literatura,Thomas Harris,bajo,medio
+Valeria Muñoz Flores,cliente590@cliente.com,712.675,2.455,Historia,Miguel de Cervantes,alto,alto
+Graciela Figueroa Muñoz,cliente591@cliente.com,5193.875,15.055,Fantasia,J.R.R. Tolkien,alto,alto
+Daniela Castillo Paredes,cliente592@cliente.com,1306.4,4.995,Historia,Terence N. D'Altroy,medio,bajo
+Claudio Rodríguez Gómez,cliente593@cliente.com,1074.95,3.93,Historia,Charles C. Mann,bajo,medio
+Patricia Zamora Dominguez,cliente594@cliente.com,943.35,3.29,Ciencia Ficcion,Juan Rulfo,medio,medio
+Bárbara Morales Mendoza,cliente595@cliente.com,974.6,2.875,Historia,Jared Diamond,bajo,medio
+Fernanda Molina Pérez,cliente596@cliente.com,395.625,1.495,Misterio,Joel Dicker,bajo,medio
+Andrea Cruz Navarrete,cliente597@cliente.com,19.95,0.185,Literatura,Malcolm Gladwell,bajo,bajo
+Roberta Morales Muñoz,cliente598@cliente.com,942.35,3.235,Tecnologia,Javier Zarca,bajo,bajo
+Valentina Medina Molina,cliente599@cliente.com,942.2,3.025,Historia,Simon Schama,bajo,medio
+Gloria Romero Espinoza,cliente600@cliente.com,13.95,0.015,Tecnologia,Susan Cruz,bajo,bajo
+Mónica Moreno Cruz,cliente601@cliente.com,1706.5,5.65,Ciencia Ficcion,Suzanne Collins,medio,medio
+Fausto González Muñoz,cliente602@cliente.com,645.35,2.245,Literatura,Charles C. Mann,bajo,medio
+Manuel Jara Rodríguez,cliente603@cliente.com,4219.775,15.14,Infantil,L. Frank Baum,alto,alto
+Roberto Ávila Gómez,cliente604@cliente.com,4770.6,15.895,Autoayuda,Stephen Covey,alto,alto
+Roberto Cruz Medina,cliente605@cliente.com,1486.6,5.21,Historia,Yuval Noah Harari,medio,alto
+Oscar Sánchez Cortes,cliente606@cliente.com,255.45,0.67,Tecnologia,Susan Cruz,bajo,bajo
+Regina Rodríguez García,cliente607@cliente.com,32.85,0.18,Autoayuda,Malcolm Gladwell,bajo,bajo
+Carlos Barría García,cliente608@cliente.com,1287.7,4.755,Misterio,Paula Hawkins,bajo,bajo
+Brandon Castillo Flores,cliente609@cliente.com,3389.175,10.45,Fantasia,J.R.R. Tolkien,alto,alto
+Iván Reyes Rivera,cliente610@cliente.com,226.25,0.685,Historia,Jack Weatherford,bajo,bajo
+Isabel Prieto Peña,cliente611@cliente.com,234.85,0.955,Misterio,Dan Brown,bajo,bajo
+Emilia Sánchez Muñoz,cliente612@cliente.com,77.6,0.29,Literatura,Malcolm Gladwell,bajo,bajo
+Manuel Muñoz Medina,cliente613@cliente.com,4250.5,12.855,Fantasia,Lewis Carroll,alto,alto
+Jorge Rodríguez López,cliente614@cliente.com,912.325,3.335,Infantil,Frank Herbert,medio,alto
+Silvia Mendoza Moreno,cliente615@cliente.com,1274.3,4.875,Tecnologia,William Gibson,medio,medio
+Adrián Romero Cortes,cliente616@cliente.com,431.975,1.675,Fantasia,Antoine de Saint-Exupery,bajo,bajo
+Beatriz Rangel Castillo,cliente617@cliente.com,2676.5,9.2,Historia,Charles C. Mann,alto,alto
+Ricardo Guerrero Cárdenas,cliente618@cliente.com,1089.15,3.83,Tecnologia,Paul Maier,bajo,medio
+Isabel Jiménez Zamora,cliente619@cliente.com,1030.475,4.16,Literatura,Simon Schama,medio,medio
+Bárbara Pizarro González,cliente620@cliente.com,4874.375,19.575,Infantil,L. Frank Baum,alto,alto
+Silvio Guerrero Martínez,cliente621@cliente.com,1484.35,4.67,Ciencia Ficcion,James Clear,medio,medio
+Gloria Chávez Muñoz,cliente622@cliente.com,5175.15,19.885,Fantasia,E.B. White,medio,alto
+Ernesto López Bustos,cliente623@cliente.com,2597.7,8.48,Tecnologia,Robert C. Martin,alto,alto
+Rosa Cruz Reyes,cliente624@cliente.com,3290.575,11.79,Tecnologia,Malcolm Gladwell,medio,alto
+Ricardo León Martínez,cliente625@cliente.com,931.85,3.865,Literatura,Isabel Allende,bajo,medio
+Patricia Herrera Torres,cliente626@cliente.com,5926.575,17.985,Fantasia,Isabel Allende,alto,alto
+Alejandra Molina Barría,cliente627@cliente.com,2362.65,8.34,Fantasia,Antoine de Saint-Exupery,medio,alto
+Oscar Cruz García,cliente628@cliente.com,4820.25,17.17,Autoayuda,Ray Bradbury,alto,alto
+Gloria Mendoza Prieto,cliente629@cliente.com,389.1,1.55,Fantasia,Frank Herbert,bajo,medio
+Laura Morales Cruz,cliente630@cliente.com,2410.3,8.075,Fantasia,Frank Herbert,alto,alto
+Silvia Contreras Pérez,cliente631@cliente.com,1943.2,6.73,Infantil,Viktor Frankl,alto,alto
+Natalia Morales Barría,cliente632@cliente.com,3158.3,10.655,Literatura,George Orwell,alto,alto
+Juan Rangel Ramírez,cliente633@cliente.com,527.0,2.365,Infantil,Douglas Adams,alto,alto
+Miguel Herrera Dominguez,cliente634@cliente.com,1864.0,6.235,Historia,Eckhart Tolle,medio,alto
+Iván Montero Romero,cliente635@cliente.com,5430.025,18.36,Infantil,C.S. Lewis,alto,alto
+Claudio Cárdenas Reyes,cliente636@cliente.com,1075.8,4.055,Autoayuda,Winston Churchill,medio,alto
+Esteban Ortiz Vidal,cliente637@cliente.com,583.2,2.045,Literatura,Julio Cortazar,bajo,medio
+Héctor Barría Vidal,cliente638@cliente.com,3577.125,12.27,Literatura,Gabriel Garcia Marquez,alto,alto
+Ernesto Lara Jiménez,cliente639@cliente.com,877.7,3.49,Literatura,Robert C. Martin,medio,bajo
+Oscar Chávez Moreno,cliente640@cliente.com,5675.125,19.015,Historia,Viktor Frankl,medio,alto
+Felipe García Díaz,cliente641@cliente.com,2059.375,5.7,Fantasia,Julio Cortazar,medio,medio
+Ana Morales Garay,cliente642@cliente.com,2414.175,8.095,Historia,Fiodor Dostoievski,medio,alto
+Patricia Herrera Medina,cliente643@cliente.com,4678.425,14.56,Infantil,Rick Riordan,alto,alto
+Sofía Mendoza Cruz,cliente644@cliente.com,238.5,1.605,Historia,Simon Schama,bajo,bajo
+Fernando Dominguez Morales,cliente645@cliente.com,786.65,3.175,Historia,Franz Kafka,bajo,medio
+José Barrera Castillo,cliente646@cliente.com,1112.05,4.77,Autoayuda,Julio Cortazar,medio,medio
+Mauricio Herrera Montero,cliente647@cliente.com,7384.475,24.385,Infantil,J.K. Rowling,alto,alto
+Constanza Paredes Rodríguez,cliente648@cliente.com,5622.6,22.18,Fantasia,Ray Bradbury,alto,alto
+Luis Guerrero Castillo,cliente649@cliente.com,437.175,1.335,Autoayuda,Simon Schama,medio,medio
+Daniel Cabrera González,cliente650@cliente.com,4853.35,17.07,Fantasia,J.K. Rowling,alto,alto
+Oscar Rangel Morales,cliente651@cliente.com,2782.5,9.235,Historia,Simon Schama,alto,alto
+Carlos López Vásquez,cliente652@cliente.com,2188.375,7.3,Tecnologia,Erich Gamma,medio,alto
+Gloria Ortiz Montero,cliente653@cliente.com,1362.35,5.15,Historia,Winston Churchill,medio,medio
+Gloria González Rangel,cliente654@cliente.com,1088.95,4.065,Infantil,Arthur C. Clarke,medio,medio
+Pedro Rodríguez Montero,cliente655@cliente.com,1077.65,2.96,Fantasia,J.R.R. Tolkien,bajo,medio
+César Castillo Martínez,cliente656@cliente.com,1353.0,4.825,Misterio,Jack Weatherford,bajo,medio
+Silvia Díaz Soto,cliente657@cliente.com,2615.625,8.925,Tecnologia,Stuart Russell,alto,alto
+Mario Contreras Ponce,cliente658@cliente.com,1998.975,6.51,Literatura,Franz Kafka,medio,medio
+Patricia Herrera Jara,cliente659@cliente.com,3113.75,11.04,Autoayuda,Carol Dweck,alto,alto
+Isabel Rangel Pizarro,cliente660@cliente.com,824.4,2.435,Misterio,Winston Churchill,bajo,bajo
+Valeria Bustos Romero,cliente661@cliente.com,340.825,1.46,Historia,Winston Churchill,medio,bajo
+Sergio Vega Salazar,cliente662@cliente.com,4143.225,13.335,Autoayuda,Jack Weatherford,alto,alto
+Víctor Montero Reyes,cliente663@cliente.com,3648.725,13.79,Infantil,Johanna Spyri,alto,alto
+Ronald Jara Torres,cliente664@cliente.com,1998.8,6.905,Autoayuda,Thomas Cormen,medio,alto
+Paola Barrera González,cliente665@cliente.com,337.9,1.17,Historia,Jared Diamond,bajo,bajo
+Ramón Iglesias Carrasco,cliente666@cliente.com,3252.45,10.435,Infantil,Roald Dahl,alto,alto
+Fernanda Moreno Lara,cliente667@cliente.com,577.025,1.595,Ciencia Ficcion,Stanislaw Lem,medio,bajo
+Graciela Gómez Vargas,cliente668@cliente.com,2632.9,10.005,Autoayuda,Harper Lee,medio,medio
+Kevin Montero López,cliente669@cliente.com,1384.475,5.695,Historia,Jose Saramago,medio,medio
+Florencia Espinoza Jiménez,cliente670@cliente.com,323.65,1.07,Historia,Viktor Frankl,bajo,bajo
+Patricio López Vargas,cliente671@cliente.com,1289.85,4.675,Autoayuda,Jack Weatherford,bajo,medio
+Paola Medina Martínez,cliente672@cliente.com,353.05,1.465,Historia,Julio Cortazar,bajo,bajo
+José Ponce Molina,cliente673@cliente.com,1194.1,4.51,Ciencia Ficcion,Napoleon Hill,bajo,medio
+Constanza Gómez Ramírez,cliente674@cliente.com,8760.925,30.605,Infantil,J.R.R. Tolkien,alto,alto
+Daniela Vargas Reyes,cliente675@cliente.com,3459.0,12.515,Infantil,Johanna Spyri,alto,alto
+Fernando Medina Morales,cliente676@cliente.com,807.1,3.32,Misterio,Agatha Christie,bajo,bajo
+Mónica Flores Ávila,cliente677@cliente.com,3962.25,12.915,Fantasia,Rick Riordan,alto,alto
+Roberta Herrera Torres,cliente678@cliente.com,55.9,0.1,Tecnologia,Susan Cruz,bajo,bajo
+Sofía Barrera Sánchez,cliente679@cliente.com,1268.15,4.82,Misterio,Charles Dickens,bajo,alto
+Valentina Ávila Pizarro,cliente680@cliente.com,4274.625,15.02,Literatura,Gabriel Garcia Marquez,alto,alto
+Claudio Iglesias Herrera,cliente681@cliente.com,1968.3,7.43,Infantil,Aldous Huxley,medio,medio
+Gonzalo Vargas Torres,cliente682@cliente.com,6558.925,21.77,Misterio,Carlos Ruiz Zafon,alto,alto
+Roberto Mendoza Ibarra,cliente683@cliente.com,6847.125,23.1,Ciencia Ficcion,William Gibson,medio,alto
+Arturo Flores Barría,cliente684@cliente.com,1039.25,3.435,Historia,Jack Weatherford,bajo,alto
+Ricardo Pizarro Mendoza,cliente685@cliente.com,848.925,3.335,Autoayuda,Malcolm Gladwell,bajo,medio
+Augusto Bustos Cruz,cliente686@cliente.com,4369.925,15.68,Infantil,Rick Riordan,alto,alto
+Silvio Figueroa Castillo,cliente687@cliente.com,4900.625,18.92,Infantil,Johanna Spyri,alto,alto
+Camila Bustos García,cliente688@cliente.com,165.25,0.53,Tecnologia,Tom Mitchell,bajo,bajo
+Patricia Lara Dominguez,cliente689@cliente.com,644.7,1.955,Autoayuda,Charles C. Mann,medio,bajo
+Fausto Torres Jara,cliente690@cliente.com,1541.05,5.55,Autoayuda,Jose Saramago,bajo,medio
+Manuel Romero Silva,cliente691@cliente.com,1273.175,4.065,Ciencia Ficcion,Stanislaw Lem,medio,alto
+Gloria Prieto Peña,cliente692@cliente.com,1978.9,7.145,Historia,Charles Dickens,medio,alto
+Roberta Barrera Bustos,cliente693@cliente.com,4202.625,14.775,Historia,Hugh Thomas,alto,alto
+Alejandra Bustos Torres,cliente694@cliente.com,4337.875,11.24,Fantasia,Antoine de Saint-Exupery,medio,alto
+Carlos Díaz Guerrero,cliente695@cliente.com,1058.3,4.125,Autoayuda,Napoleon Hill,bajo,medio
+Diego Soto Cortes,cliente696@cliente.com,431.85,1.425,Ciencia Ficcion,Agatha Christie,bajo,medio
+Luis López Ramírez,cliente697@cliente.com,550.25,1.855,Ciencia Ficcion,Tom Mitchell,bajo,bajo
+Roberta Montero Peralta,cliente698@cliente.com,1119.6,4.25,Misterio,Thomas Harris,medio,medio
+Brandon Contreras Reyes,cliente699@cliente.com,563.375,2.08,Autoayuda,Jose Saramago,bajo,bajo
+Miguel Vidal Sánchez,cliente700@cliente.com,1861.5,6.115,Ciencia Ficcion,Thomas Cormen,medio,medio
+Alejandra Zamora Iglesias,cliente701@cliente.com,603.2,2.08,Historia,Jack Weatherford,bajo,medio
+Ana Montero Sánchez,cliente702@cliente.com,935.35,3.785,Autoayuda,Paulo Coelho,medio,medio
+Elena Rivera López,cliente703@cliente.com,646.025,2.4,Historia,Julio Cortazar,bajo,bajo
+Santiago Díaz Ortiz,cliente704@cliente.com,2943.325,9.625,Fantasia,Arthur C. Clarke,alto,alto
+Beatriz Dominguez Martínez,cliente705@cliente.com,5753.45,20.98,Tecnologia,William Gibson,alto,alto
+Carlos Medina Silva,cliente706@cliente.com,526.3,1.905,Historia,Paula Hawkins,bajo,bajo
+Carmen Paredes Rivera,cliente707@cliente.com,1419.575,5.205,Autoayuda,Stephen Covey,medio,medio
+Carlos Garay Reyes,cliente708@cliente.com,1972.525,7.385,Literatura,Juan Rulfo,bajo,medio
+Graciela Jara Ponce,cliente709@cliente.com,4724.45,15.7,Infantil,Rick Riordan,alto,alto
+Ricardo Cabrera Rangel,cliente710@cliente.com,2969.225,9.535,Fantasia,Javier Zarca,medio,alto
+Lorena Barrera López,cliente711@cliente.com,345.375,1.035,Fantasia,Antoine de Saint-Exupery,medio,bajo
+Isabel Ramírez Ortiz,cliente712@cliente.com,4454.325,13.8,Ciencia Ficcion,William Gibson,alto,alto
+Lorena Guerrero Ortiz,cliente713@cliente.com,644.45,2.165,Tecnologia,Harper Lee,medio,medio
+Lucía Figueroa Lara,cliente714@cliente.com,4695.375,15.62,Ciencia Ficcion,Aldous Huxley,alto,alto
+Tomás Morales Pérez,cliente715@cliente.com,5068.925,17.345,Tecnologia,Carol Dweck,alto,alto
+Isabel Vidal Prieto,cliente716@cliente.com,5432.7,16.79,Fantasia,J.R.R. Tolkien,alto,alto
+Manuel Montero Torres,cliente717@cliente.com,62.65,0.255,Historia,Jack Weatherford,bajo,bajo
+Augusto Martínez Fuentes,cliente718@cliente.com,525.15,1.64,Historia,Jared Diamond,bajo,medio
+Kevin Martínez Martínez,cliente719@cliente.com,1927.325,6.15,Fantasia,Mark Twain,medio,alto
+Rodrigo López Molina,cliente720@cliente.com,1293.3,4.255,Ciencia Ficcion,L. Frank Baum,alto,alto
+Lorena Núñez Ortiz,cliente721@cliente.com,4647.1,15.54,Historia,Jack Weatherford,alto,alto
+Beatriz Salazar González,cliente722@cliente.com,2969.25,11.875,Infantil,Maurice Sendak,alto,alto
+Camila Vidal López,cliente723@cliente.com,3773.075,14.215,Historia,Hugh Thomas,alto,alto
+Emilia Cruz Flores,cliente724@cliente.com,1332.925,4.62,Literatura,Juan Rulfo,medio,medio
+Ana Moreno Cabrera,cliente725@cliente.com,5767.95,16.465,Fantasia,J.K. Rowling,alto,alto
+Verónica González Castillo,cliente726@cliente.com,3519.15,12.7,Autoayuda,Jose Saramago,alto,alto
+Silvio Garay Iglesias,cliente727@cliente.com,1852.675,5.77,Infantil,Antoine de Saint-Exupery,medio,alto
+Mario Peña Rodríguez,cliente728@cliente.com,1884.6,6.725,Literatura,William Faulkner,medio,alto
+Lucas Díaz Castillo,cliente729@cliente.com,7879.425,26.705,Misterio,Paula Hawkins,alto,alto
+Elena Cruz Dominguez,cliente730@cliente.com,3722.7,13.275,Historia,Miguel de Cervantes,alto,alto
+Gloria Vargas Morales,cliente731@cliente.com,635.45,1.76,Ciencia Ficcion,Frank Herbert,bajo,bajo
+Patricia Gómez Chávez,cliente732@cliente.com,858.35,3.26,Literatura,Harper Lee,bajo,medio
+Patricia Martínez Medina,cliente733@cliente.com,406.875,1.445,Fantasia,Douglas Adams,bajo,bajo
+Fernando Jiménez Molina,cliente734@cliente.com,2218.45,6.825,Fantasia,Maurice Sendak,medio,alto
+Lucía Flores Sánchez,cliente735@cliente.com,2835.35,10.315,Ciencia Ficcion,Arthur C. Clarke,alto,alto
+Oscar Torres Mendoza,cliente736@cliente.com,3447.325,12.085,Ciencia Ficcion,Neil Gaiman,alto,alto
+Fernanda Rodríguez Ramírez,cliente737@cliente.com,2333.125,8.335,Historia,Bill Bryson,medio,alto
+Silvio Rivera Muñoz,cliente738@cliente.com,4364.775,15.145,Infantil,Maurice Sendak,alto,alto
+Beatriz Vidal Carrasco,cliente739@cliente.com,1468.5,6.08,Autoayuda,Malcolm Gladwell,medio,medio
+Emilia Ramírez López,cliente740@cliente.com,785.15,2.67,Literatura,Miguel de Cervantes,bajo,bajo
+José Jara Zamora,cliente741@cliente.com,133.85,0.36,Historia,Hugh Thomas,bajo,bajo
+Kevin Muñoz Ortiz,cliente742@cliente.com,1139.525,4.045,Infantil,Lewis Carroll,alto,alto
+Camila Díaz Martínez,cliente743@cliente.com,3159.075,10.98,Ciencia Ficcion,Erich Gamma,alto,alto
+Carmen García Medina,cliente744@cliente.com,3989.8,15.415,Literatura,Jose Saramago,alto,alto
+Vicente Fuentes Bustos,cliente745@cliente.com,304.55,0.96,Historia,Winston Churchill,bajo,bajo
+Alejandra Castillo Soto,cliente746@cliente.com,284.0,1.35,Autoayuda,Harper Lee,bajo,medio
+Martina Vidal Salazar,cliente747@cliente.com,245.45,0.915,Misterio,Douglas Preston,bajo,bajo
+Patricio López Díaz,cliente748@cliente.com,2830.8,9.785,Autoayuda,Jojo Moyes,medio,alto
+Patricia Muñoz Soto,cliente749@cliente.com,2404.7,8.605,Fantasia,Brandon Sanderson,medio,alto
+Jorge Guerrero Muñoz,cliente750@cliente.com,4772.8,14.99,Ciencia Ficcion,Stanislaw Lem,alto,alto
+Arturo Medina Garay,cliente751@cliente.com,1428.85,4.87,Infantil,J.K. Rowling,bajo,medio
+Patricio Muñoz Silva,cliente752@cliente.com,3732.575,14.54,Infantil,Maurice Sendak,alto,alto
+Diego Rodríguez Medina,cliente753@cliente.com,3251.1,10.575,Infantil,J.M. Barrie,alto,alto
+Lucía Espinoza Torres,cliente754@cliente.com,3266.15,12.115,Literatura,Paulo Coelho,alto,alto
+Renata García Montero,cliente755@cliente.com,2206.35,7.785,Autoayuda,George Orwell,alto,alto
+Paola Vargas Chávez,cliente756@cliente.com,574.5,2.03,Misterio,Charles C. Mann,bajo,bajo
+Valeria Moreno Cortes,cliente757@cliente.com,1010.075,2.975,Fantasia,Patrick Rothfuss,medio,alto
+Gloria Ponce Contreras,cliente758@cliente.com,2623.9,9.5,Autoayuda,Terence N. D'Altroy,alto,alto
+Alejandra Díaz Guerrero,cliente759@cliente.com,514.3,1.655,Literatura,Miguel de Cervantes,bajo,bajo
+Florencia Martínez Vega,cliente760@cliente.com,2005.85,6.95,Literatura,Fiodor Dostoievski,medio,alto
+Paola Bustos Flores,cliente761@cliente.com,15.9,0.03,Tecnologia,Andrew Hunt,bajo,bajo
+Nicolás Peña Guerrero,cliente762@cliente.com,1219.2,3.575,Historia,Juan Rulfo,medio,medio
+Héctor Morales García,cliente763@cliente.com,995.975,3.72,Misterio,Thomas Harris,bajo,medio
+Valeria Vargas Cruz,cliente764@cliente.com,1847.2,6.235,Autoayuda,Juan Rulfo,medio,medio
+Gloria Sánchez García,cliente765@cliente.com,920.125,2.955,Infantil,Johanna Spyri,bajo,medio
+Diego Chávez Martínez,cliente766@cliente.com,582.9,2.27,Literatura,Juan Rulfo,medio,medio
+Luis Guerrero Barría,cliente767@cliente.com,6733.475,23.755,Ciencia Ficcion,J.R.R. Tolkien,alto,alto
+Víctor Figueroa Bravo,cliente768@cliente.com,4810.725,17.23,Fantasia,J.R.R. Tolkien,alto,alto
+Carmen Rangel Díaz,cliente769@cliente.com,567.8,2.09,Autoayuda,Gillian Flynn,medio,bajo
+Tomás Ortiz Cabrera,cliente770@cliente.com,216.6,0.795,Autoayuda,Gabriel Garcia Marquez,bajo,medio
+Ana Pérez Cruz,cliente771@cliente.com,2510.375,9.05,Literatura,Fiodor Dostoievski,alto,alto
+Beatriz Pérez Espinoza,cliente772@cliente.com,1362.55,4.675,Misterio,Carlos Ruiz Zafon,bajo,medio
+Ricardo Cabrera Peña,cliente773@cliente.com,3352.2,11.31,Literatura,Fiodor Dostoievski,alto,alto
+Bárbara Rodríguez Sánchez,cliente774@cliente.com,3407.9,12.335,Literatura,Stephen Covey,bajo,alto
+Ronald Cabrera Ramírez,cliente775@cliente.com,3649.425,13.505,Infantil,Antoine de Saint-Exupery,alto,alto
+Gloria López Ponce,cliente776@cliente.com,5178.275,17.8,Infantil,William Gibson,alto,alto
+Roberto Medina Ortiz,cliente777@cliente.com,528.5,1.785,Historia,Terence N. D'Altroy,bajo,medio
+Tomás Salazar Rodríguez,cliente778@cliente.com,737.075,2.455,Misterio,Paula Hawkins,bajo,medio
+Roberto Torres Ponce,cliente779@cliente.com,5222.6,20.21,Autoayuda,Marie Kondo,alto,alto
+Alejandro Rodríguez Herrera,cliente780@cliente.com,1905.875,6.765,Ciencia Ficcion,Douglas Adams,medio,alto
+Graciela García Silva,cliente781@cliente.com,1040.15,3.9,Autoayuda,Dale Carnegie,bajo,medio
+Brandon Navarrete Montero,cliente782@cliente.com,149.6,0.75,Misterio,Patricia Cornwell,bajo,bajo
+Miguel Ibarra Carrasco,cliente783@cliente.com,990.15,3.62,Literatura,Miguel de Cervantes,bajo,medio
+Axel Guerrero Ramírez,cliente784@cliente.com,2624.45,7.99,Historia,Winston Churchill,alto,alto
+Luis Morales León,cliente785@cliente.com,433.6,1.72,Autoayuda,Paulo Coelho,bajo,bajo
+Ernesto Vega Medina,cliente786@cliente.com,1330.0,4.44,Ciencia Ficcion,William Gibson,medio,medio
+Manuel Rangel Ortiz,cliente787@cliente.com,771.225,3.805,Infantil,Mark Twain,bajo,medio
+Rosa Flores Muñoz,cliente788@cliente.com,1310.5,3.82,Historia,Winston Churchill,alto,alto
+Carlos López Castillo,cliente789@cliente.com,753.8,3.5,Fantasia,Mark Twain,bajo,medio
+Lorena Martínez Torres,cliente790@cliente.com,276.95,0.955,Tecnologia,Erich Gamma,bajo,bajo
+Rosa Chávez Martínez,cliente791@cliente.com,2078.25,7.73,Literatura,Isabel Allende,medio,medio
+Vicente Jiménez Pérez,cliente792@cliente.com,49.45,0.225,Autoayuda,Paulo Coelho,bajo,bajo
+Renata Peña Cortes,cliente793@cliente.com,907.95,2.975,Literatura,Gabriel Garcia Marquez,bajo,medio
+Mónica Figueroa Salazar,cliente794@cliente.com,1253.275,4.4,Historia,Miguel de Cervantes,medio,medio
+Regina Vidal Vargas,cliente795@cliente.com,262.7,0.99,Misterio,Douglas Preston,bajo,bajo
+Bárbara López Cortes,cliente796@cliente.com,919.35,4.11,Literatura,George Orwell,bajo,medio
+Constanza Rodríguez Morales,cliente797@cliente.com,616.8,2.225,Literatura,Juan Rulfo,medio,medio
+Sergio Jara García,cliente798@cliente.com,1090.9,4.02,Autoayuda,Dale Carnegie,medio,medio
+Ronald Mendoza Morales,cliente799@cliente.com,771.55,3.185,Historia,Jared Diamond,medio,medio
+Antonella Cruz Cruz,cliente800@cliente.com,451.85,1.85,Fantasia,Fiodor Dostoievski,bajo,bajo
+Gonzalo Herrera Bustos,cliente801@cliente.com,959.475,3.785,Misterio,Paula Hawkins,bajo,bajo
+Ernesto Chávez Bustos,cliente802@cliente.com,3599.9,12.475,Literatura,William Faulkner,medio,alto
+Beatriz Barría Peralta,cliente803@cliente.com,1384.975,4.83,Historia,Fiodor Dostoievski,medio,medio
+Julio Barría Núñez,cliente804@cliente.com,277.2,0.985,Autoayuda,Eckhart Tolle,bajo,bajo
+Daniela León Medina,cliente805@cliente.com,3894.425,14.29,Ciencia Ficcion,L. Frank Baum,alto,alto
+Camila Flores Bustos,cliente806@cliente.com,1055.2,4.145,Literatura,Hugh Thomas,bajo,medio
+Javier Rivera Ortiz,cliente807@cliente.com,5914.275,20.21,Autoayuda,William Gibson,alto,alto
+Andrés Moreno Morales,cliente808@cliente.com,300.075,1.075,Historia,Jared Diamond,bajo,bajo
+Fernando Soto Peralta,cliente809@cliente.com,800.35,2.095,Historia,Hugh Thomas,bajo,bajo
+Carolina Figueroa Vargas,cliente810@cliente.com,911.05,4.1,Literatura,Fiodor Dostoievski,bajo,medio
+Renata Muñoz Paredes,cliente811@cliente.com,697.95,2.765,Autoayuda,Terence N. D'Altroy,bajo,bajo
+Juan Mendoza García,cliente812@cliente.com,1237.325,4.68,Misterio,Dan Brown,bajo,bajo
+Julio Rodríguez Salazar,cliente813@cliente.com,660.125,2.615,Literatura,Paula Hawkins,medio,medio
+Pedro Cruz Cárdenas,cliente814@cliente.com,1279.05,4.605,Tecnologia,Ray Bradbury,bajo,medio
+Florencia Dominguez Sánchez,cliente815@cliente.com,5234.45,17.295,Ciencia Ficcion,Roald Dahl,alto,alto
+Adrián Medina García,cliente816@cliente.com,6959.525,22.685,Ciencia Ficcion,Marie Kondo,alto,alto
+Ricardo Reyes Díaz,cliente817@cliente.com,5020.725,16.89,Historia,Paula Hawkins,alto,alto
+Nicolás Guerrero Guerrero,cliente818@cliente.com,1547.95,5.725,Fantasia,Brandon Sanderson,alto,alto
+Tomás Martínez Reyes,cliente819@cliente.com,2078.2,7.185,Historia,Simon Schama,bajo,medio
+Rosa Vidal Morales,cliente820@cliente.com,457.45,1.59,Misterio,Douglas Preston,bajo,bajo
+Mónica Mendoza Jara,cliente821@cliente.com,1034.925,4.035,Misterio,Carlos Ruiz Zafon,bajo,bajo
+Fausto Lara Lara,cliente822@cliente.com,2106.0,6.39,Ciencia Ficcion,C.S. Lewis,medio,alto
+Esteban López Gómez,cliente823@cliente.com,1464.925,4.785,Infantil,Douglas Adams,alto,alto
+Juan Chávez Carrasco,cliente824@cliente.com,4460.725,15.955,Autoayuda,Malcolm Gladwell,alto,alto
+Lucía López Cruz,cliente825@cliente.com,2488.15,8.445,Tecnologia,Erich Gamma,bajo,bajo
+Gonzalo Reyes Rangel,cliente826@cliente.com,2502.0,9.12,Historia,Yuval Noah Harari,alto,alto
+Roberta Herrera Pizarro,cliente827@cliente.com,5122.5,17.95,Misterio,Douglas Preston,alto,alto
+Silvio Ponce Cárdenas,cliente828@cliente.com,414.25,1.69,Autoayuda,Napoleon Hill,medio,medio
+Augusto Morales Herrera,cliente829@cliente.com,50.0,0.105,Tecnologia,Susan Cruz,bajo,bajo
+Kevin Lara Espinoza,cliente830@cliente.com,1020.45,4.64,Autoayuda,Yuval Noah Harari,medio,medio
+Leonardo Reyes Cruz,cliente831@cliente.com,626.0,2.465,Ciencia Ficcion,Napoleon Hill,bajo,medio
+Gabriel Molina Lara,cliente832@cliente.com,2131.95,6.335,Tecnologia,Thomas Cormen,medio,medio
+Esteban Castillo Medina,cliente833@cliente.com,1704.625,6.745,Autoayuda,Jared Diamond,medio,alto
+Rosa Peña Torres,cliente834@cliente.com,825.55,3.1,Tecnologia,Erich Gamma,bajo,medio
+Manuel Sánchez López,cliente835@cliente.com,1141.1,3.745,Tecnologia,Franz Kafka,bajo,medio
+Pedro Molina Núñez,cliente836@cliente.com,463.95,1.985,Literatura,Jack Weatherford,bajo,bajo
+Roberto Morales Ávila,cliente837@cliente.com,758.45,2.84,Literatura,Franz Kafka,bajo,medio
+Fernando Navarrete Torres,cliente838@cliente.com,3112.975,13.11,Infantil,Lewis Carroll,alto,alto
+Carlos Flores Gómez,cliente839@cliente.com,2802.35,10.365,Infantil,E.B. White,medio,alto
+Tomás Torres León,cliente840@cliente.com,1411.875,4.635,Literatura,Franz Kafka,medio,medio
+Martina Cruz García,cliente841@cliente.com,974.4,3.09,Tecnologia,Javier Zarca,bajo,bajo
+Laura Muñoz López,cliente842@cliente.com,1308.025,5.79,Infantil,Lewis Carroll,alto,alto
+Fernando Contreras Molina,cliente843@cliente.com,928.7,3.36,Historia,William Faulkner,bajo,medio
+Daniela Vidal Cabrera,cliente844@cliente.com,472.5,1.97,Literatura,Malcolm Gladwell,bajo,bajo
+Gloria Muñoz Montero,cliente845@cliente.com,503.65,1.695,Historia,Douglas Preston,medio,bajo
+Sergio Chávez Mendoza,cliente846@cliente.com,5241.675,16.37,Historia,Julio Cortazar,alto,alto
+Roberto Vargas Molina,cliente847@cliente.com,2379.075,7.65,Ciencia Ficcion,Winston Churchill,medio,alto
+Marcelo Cortes Paredes,cliente848@cliente.com,3274.95,11.41,Ciencia Ficcion,Douglas Adams,alto,alto
+Fausto Castillo Rivera,cliente849@cliente.com,2444.85,8.465,Autoayuda,James Clear,alto,alto
+Fernando Bravo Peralta,cliente850@cliente.com,531.525,1.95,Tecnologia,Erich Gamma,bajo,medio
+Esteban Bravo Flores,cliente851@cliente.com,5198.175,17.71,Misterio,Gillian Flynn,alto,alto
+Marcos Vega Reyes,cliente852@cliente.com,4688.25,15.89,Literatura,Gabriel Garcia Marquez,alto,alto
+Fernanda Barría Moreno,cliente853@cliente.com,1760.8,6.155,Ciencia Ficcion,Stephen Covey,medio,medio
+Arturo Ibarra Zamora,cliente854@cliente.com,1899.15,6.475,Literatura,Scott Turow,medio,alto
+Kevin Vega Pérez,cliente855@cliente.com,862.8,2.415,Historia,Isabel Allende,bajo,bajo
+Laura Ibarra Muñoz,cliente856@cliente.com,320.85,1.125,Tecnologia,Suzanne Collins,bajo,bajo
+Miguel Jiménez Pérez,cliente857@cliente.com,1674.0,5.575,Misterio,Thomas Harris,bajo,alto
+Sergio Lara Guerrero,cliente858@cliente.com,3977.8,13.61,Infantil,Patrick Rothfuss,alto,alto
+Juan Cruz Flores,cliente859@cliente.com,438.15,1.595,Misterio,Patricia Cornwell,bajo,bajo
+Julio Morales Rivera,cliente860@cliente.com,4655.675,17.215,Fantasia,Neil Gaiman,alto,alto
+Fausto Díaz Castillo,cliente861@cliente.com,2277.1,7.73,Autoayuda,Carol Dweck,alto,alto
+Ramón Vargas Navarrete,cliente862@cliente.com,2142.225,8.075,Ciencia Ficcion,Mark Twain,medio,alto
+Patricio Torres Díaz,cliente863@cliente.com,403.9,1.545,Literatura,George Orwell,bajo,bajo
+Emilio Ramírez Contreras,cliente864@cliente.com,112.55,0.375,Literatura,Simon Schama,bajo,bajo
+Camila Espinoza Cortes,cliente865@cliente.com,2180.0,7.99,Literatura,Viktor Frankl,medio,alto
+Gonzalo Rivera Castillo,cliente866@cliente.com,1661.05,5.825,Literatura,Juan Rulfo,medio,medio
+Fernanda Chávez Ibarra,cliente867@cliente.com,969.75,4.39,Literatura,Hugh Thomas,bajo,bajo
+Fernanda Muñoz Morales,cliente868@cliente.com,5195.7,15.165,Fantasia,E.B. White,alto,alto
+Sofía Sánchez Flores,cliente869@cliente.com,1159.95,3.93,Literatura,Simon Schama,medio,medio
+Sergio Cortes Garay,cliente870@cliente.com,1823.6,7.445,Infantil,Antoine de Saint-Exupery,alto,alto
+Rosa Barrera Pérez,cliente871@cliente.com,246.85,0.855,Ciencia Ficcion,William Gibson,bajo,bajo
+Sebastián Vargas González,cliente872@cliente.com,631.15,2.0,Historia,Jared Diamond,bajo,medio
+Adrián Contreras Medina,cliente873@cliente.com,3644.2,13.05,Fantasia,Orson Scott Card,medio,alto
+Marcelo Zamora Martínez,cliente874@cliente.com,3174.45,10.425,Tecnologia,Tom Mitchell,alto,alto
+Santiago Díaz Fuentes,cliente875@cliente.com,1134.575,4.165,Misterio,Dale Carnegie,medio,medio
+Ana Ortiz Jiménez,cliente876@cliente.com,4539.55,16.355,Autoayuda,Suzanne Collins,alto,alto
+Pedro Jara Rangel,cliente877@cliente.com,3973.875,13.6,Literatura,Hugh Thomas,alto,alto
+Beatriz Martínez Peña,cliente878@cliente.com,1522.625,5.135,Autoayuda,Agatha Christie,medio,medio
+Natalia Prieto Castillo,cliente879@cliente.com,366.1,1.26,Ciencia Ficcion,Erich Gamma,bajo,bajo
+Silvia Ramírez Díaz,cliente880@cliente.com,46.45,0.07,Tecnologia,Susan Cruz,bajo,bajo
+Constanza Molina Mendoza,cliente881@cliente.com,1643.7,6.77,Autoayuda,Charles Dickens,medio,alto
+Elena Cárdenas Peña,cliente882@cliente.com,692.95,2.12,Misterio,Agatha Christie,bajo,medio
+Regina Muñoz Mendoza,cliente883@cliente.com,2402.675,8.01,Ciencia Ficcion,Eckhart Tolle,alto,alto
+Ramón Núñez Cruz,cliente884@cliente.com,2370.375,8.23,Fantasia,Rick Riordan,medio,alto
+Roberto Bravo Vásquez,cliente885@cliente.com,2113.775,6.125,Infantil,J.K. Rowling,medio,alto
+Carmen Díaz Garay,cliente886@cliente.com,5374.725,17.155,Misterio,Douglas Preston,alto,alto
+Patricia Martínez Morales,cliente887@cliente.com,1791.875,5.88,Literatura,Bill Bryson,medio,alto
+Graciela Chávez Rodríguez,cliente888@cliente.com,384.85,1.33,Literatura,Franz Kafka,bajo,medio
+Paola Barría García,cliente889@cliente.com,5476.75,17.56,Infantil,Johanna Spyri,alto,alto
+Alberto Sánchez Rodríguez,cliente890@cliente.com,2687.6,9.83,Historia,Gabriel Garcia Marquez,alto,alto
+Roberta Salazar Fuentes,cliente891@cliente.com,1329.95,4.605,Literatura,Miguel de Cervantes,medio,medio
+Fausto Lara Dominguez,cliente892@cliente.com,4282.925,13.885,Historia,Charles C. Mann,alto,alto
+Jorge Rangel Reyes,cliente893@cliente.com,3504.025,12.16,Fantasia,Johanna Spyri,alto,alto
+Valentina Jiménez Díaz,cliente894@cliente.com,1533.675,5.19,Ciencia Ficcion,Roald Dahl,medio,medio
+Elena Herrera Díaz,cliente895@cliente.com,1525.75,5.155,Autoayuda,Paulo Coelho,medio,medio
+Andrés Fuentes Contreras,cliente896@cliente.com,2571.025,8.435,Tecnologia,Robert C. Martin,medio,alto
+Martina Núñez Paredes,cliente897@cliente.com,3212.5,10.83,Autoayuda,Stephen Covey,alto,alto
+María Paredes Vargas,cliente898@cliente.com,2522.45,7.56,Fantasia,Marie Kondo,bajo,alto
+Héctor Reyes Herrera,cliente899@cliente.com,652.65,2.25,Literatura,Charles Dickens,medio,bajo
+Martina Montero León,cliente900@cliente.com,571.55,2.205,Historia,Bill Bryson,medio,medio
+Carlos Salazar Carrasco,cliente901@cliente.com,1789.675,5.35,Fantasia,Isabel Allende,medio,medio
+Florencia González Morales,cliente902@cliente.com,4638.25,16.98,Ciencia Ficcion,Frank Herbert,alto,alto
+Miguel Torres Prieto,cliente903@cliente.com,1366.45,4.615,Tecnologia,Javier Zarca,bajo,medio
+Lucía García Cortes,cliente904@cliente.com,1554.3,5.48,Historia,Yuval Noah Harari,medio,medio
+Valentina Peralta Guerrero,cliente905@cliente.com,883.525,3.375,Infantil,Stanislaw Lem,medio,alto
+Martina Barría Flores,cliente906@cliente.com,805.9,2.89,Literatura,Hugh Thomas,bajo,bajo
+Ricardo Peralta Ortiz,cliente907@cliente.com,428.95,1.605,Literatura,Charles C. Mann,bajo,bajo
+Jorge Herrera Muñoz,cliente908@cliente.com,1335.4,4.49,Misterio,Dan Brown,bajo,medio
+Pablo Salazar Salazar,cliente909@cliente.com,938.5,3.255,Autoayuda,Stephen Covey,bajo,medio
+Lucía López Moreno,cliente910@cliente.com,1187.3,3.945,Historia,Simon Schama,medio,medio
+Héctor Peña Díaz,cliente911@cliente.com,966.0,3.67,Literatura,Jorge Luis Borges,bajo,medio
+Luis Vidal Romero,cliente912@cliente.com,1124.975,4.29,Infantil,Antoine de Saint-Exupery,medio,alto
+Alejandro Lara Martínez,cliente913@cliente.com,5225.85,16.67,Fantasia,Jojo Moyes,alto,alto
+Silvia Herrera Cruz,cliente914@cliente.com,272.35,1.155,Misterio,Patricia Cornwell,bajo,bajo
+Patricia García Medina,cliente915@cliente.com,4554.55,16.35,Fantasia,Arthur C. Clarke,alto,alto
+Ricardo Ponce Cabrera,cliente916@cliente.com,5898.2,18.87,Historia,Hugh Thomas,alto,alto
+Andrea Ponce Flores,cliente917@cliente.com,1665.45,5.55,Ciencia Ficcion,Marcus Garrido,medio,alto
+Mónica Flores Ramírez,cliente918@cliente.com,2717.45,9.14,Ciencia Ficcion,Paulo Coelho,alto,alto
+Hugo Castillo López,cliente919@cliente.com,2957.45,10.15,Historia,Viktor Frankl,alto,alto
+Lorena Paredes Prieto,cliente920@cliente.com,560.8,1.84,Infantil,Douglas Adams,medio,alto
+Sergio Rivera Molina,cliente921@cliente.com,675.625,2.6,Historia,Juan Rulfo,medio,medio
+Laura Chávez Vega,cliente922@cliente.com,326.6,1.63,Infantil,Patricia Cornwell,bajo,bajo
+Javier Peña Prieto,cliente923@cliente.com,692.2,2.265,Autoayuda,Dale Carnegie,bajo,bajo
+Hugo Ávila Reyes,cliente924@cliente.com,1581.05,6.655,Historia,Marie Kondo,medio,medio
+Valeria Montero Figueroa,cliente925@cliente.com,72.0,0.295,Historia,Jared Diamond,bajo,bajo
+José Figueroa Ávila,cliente926@cliente.com,1237.725,4.21,Historia,Jared Diamond,medio,medio
+Bárbara Cabrera Reyes,cliente927@cliente.com,982.15,3.97,Literatura,Juan Rulfo,bajo,medio
+Alberto Barrera Barrera,cliente928@cliente.com,6216.65,20.905,Misterio,Paula Hawkins,alto,alto
+Hugo Ponce Díaz,cliente929@cliente.com,3579.85,12.505,Ciencia Ficcion,Erich Gamma,alto,alto
+Lorena Prieto Morales,cliente930@cliente.com,4311.975,14.155,Misterio,Dan Brown,alto,alto
+Renata Lara Lara,cliente931@cliente.com,31.5,0.13,Historia,Jared Diamond,bajo,bajo
+Víctor Muñoz Chávez,cliente932@cliente.com,947.65,3.615,Ciencia Ficcion,William Gibson,bajo,medio
+Renata Prieto Chávez,cliente933@cliente.com,943.3,2.74,Literatura,Franz Kafka,bajo,bajo
+Fernando Vargas Castillo,cliente934@cliente.com,492.05,1.79,Misterio,Paula Hawkins,medio,bajo
+Antonella Díaz Reyes,cliente935@cliente.com,230.275,0.925,Misterio,Charles C. Mann,bajo,bajo
+Emilia Mendoza Herrera,cliente936@cliente.com,771.0,2.165,Historia,Malcolm Gladwell,bajo,bajo
+Patricia Gómez Reyes,cliente937@cliente.com,2389.575,7.85,Ciencia Ficcion,J.K. Rowling,alto,alto
+Daniel Molina Ortiz,cliente938@cliente.com,1019.95,4.035,Tecnologia,Marcus Garrido,bajo,alto
+Roberta Medina León,cliente939@cliente.com,89.45,0.235,Historia,Yuval Noah Harari,bajo,bajo
+Regina López Lara,cliente940@cliente.com,1395.35,5.08,Historia,Hugh Thomas,medio,medio
+Alejandra Pérez Reyes,cliente941@cliente.com,2497.65,9.4,Infantil,E.B. White,medio,alto
+Constanza Ávila Reyes,cliente942@cliente.com,3916.375,14.54,Fantasia,Arthur C. Clarke,alto,alto
+Florencia García Soto,cliente943@cliente.com,1502.725,4.84,Misterio,Dan Brown,bajo,alto
+Valentina Espinoza Contreras,cliente944@cliente.com,5153.975,17.325,Ciencia Ficcion,Arthur C. Clarke,alto,alto
+Kevin López Navarrete,cliente945@cliente.com,3064.15,10.865,Infantil,Orson Scott Card,alto,alto
+Ana Guerrero Reyes,cliente946@cliente.com,443.7,1.57,Historia,Napoleon Hill,bajo,medio
+Carmen Martínez Guerrero,cliente947@cliente.com,1121.75,4.05,Autoayuda,Simon Schama,medio,medio
+Kevin Pizarro Dominguez,cliente948@cliente.com,1565.25,6.22,Ciencia Ficcion,Napoleon Hill,bajo,medio
+Esteban Jiménez Pérez,cliente949@cliente.com,1620.925,5.13,Ciencia Ficcion,Frank Herbert,medio,alto
+Antonella Díaz Jara,cliente950@cliente.com,1658.3,5.73,Fantasia,Rick Riordan,medio,alto
+Lorena García Soto,cliente951@cliente.com,1916.7,6.45,Infantil,Patrick Rothfuss,bajo,medio
+Natalia Vidal Dominguez,cliente952@cliente.com,13.0,0.03,Literatura,Malcolm Gladwell,bajo,bajo
+Silvia Jiménez Soto,cliente953@cliente.com,5131.675,18.37,Misterio,Terence N. D'Altroy,alto,alto
+Beatriz Pérez Ibarra,cliente954@cliente.com,1373.65,4.745,Literatura,Fiodor Dostoievski,medio,medio
+Juan Vargas Morales,cliente955@cliente.com,1829.75,5.42,Fantasia,L. Frank Baum,medio,medio
+Ana Iglesias Castillo,cliente956@cliente.com,1063.7,3.995,Autoayuda,Charles Dickens,bajo,medio
+María Bravo Castillo,cliente957@cliente.com,736.95,2.125,Infantil,Antoine de Saint-Exupery,medio,bajo
+Tomás Morales Carrasco,cliente958@cliente.com,1922.2,6.475,Literatura,Isabel Allende,medio,alto
+Martina Contreras Cruz,cliente959@cliente.com,8.65,0.01,Historia,Jared Diamond,bajo,bajo
+Miguel Cortes Cruz,cliente960@cliente.com,1161.375,4.19,Historia,Juan Rulfo,bajo,medio
+Mónica Castillo Vásquez,cliente961@cliente.com,3880.025,17.36,Infantil,Patrick Rothfuss,alto,alto
+Manuel Rodríguez Salazar,cliente962@cliente.com,1796.15,5.92,Tecnologia,William Gibson,medio,alto
+Paola Ramírez Espinoza,cliente963@cliente.com,494.65,1.685,Historia,Fiodor Dostoievski,bajo,medio
+Héctor Dominguez Ortiz,cliente964@cliente.com,713.75,2.61,Literatura,Franz Kafka,bajo,medio
+Patricia Chávez Mendoza,cliente965@cliente.com,871.3,2.745,Ciencia Ficcion,Stuart Russell,bajo,medio
+Adrián González Flores,cliente966@cliente.com,1898.95,6.035,Literatura,Julio Cortazar,bajo,medio
+Manuel Vásquez Ortiz,cliente967@cliente.com,2805.1,9.63,Tecnologia,Marcus Garrido,alto,medio
+Verónica González Martínez,cliente968@cliente.com,2021.55,6.845,Autoayuda,Douglas Adams,medio,alto
+Camila Sánchez Dominguez,cliente969@cliente.com,154.15,0.55,Historia,Simon Schama,bajo,bajo
+Elena Medina Vargas,cliente970@cliente.com,10.95,0.02,Historia,Jared Diamond,bajo,bajo
+Bárbara Vargas Silva,cliente971@cliente.com,3553.9,12.445,Literatura,James Clear,alto,alto
+Santiago Sánchez Rivera,cliente972@cliente.com,4397.15,16.07,Ciencia Ficcion,Paulo Coelho,medio,alto
+Elena Bravo Rangel,cliente973@cliente.com,1354.3,4.29,Fantasia,Brandon Sanderson,bajo,medio
+Paola Vargas Rangel,cliente974@cliente.com,1444.2,4.785,Literatura,Marie Kondo,medio,medio
+Diego Bustos Cortes,cliente975@cliente.com,3157.575,10.88,Ciencia Ficcion,Douglas Adams,alto,alto
+Ana López Prieto,cliente976@cliente.com,2679.5,9.355,Ciencia Ficcion,Patrick Rothfuss,alto,alto
+Fernanda Prieto Ramírez,cliente977@cliente.com,1042.15,3.54,Tecnologia,Marcus Garrido,bajo,medio
+Natalia Ortiz Torres,cliente978@cliente.com,2424.1,7.825,Infantil,L. Frank Baum,alto,alto
+César Herrera Guerrero,cliente979@cliente.com,938.05,3.64,Autoayuda,Charles Dickens,bajo,medio
+Silvia Guerrero Figueroa,cliente980@cliente.com,4587.325,16.215,Autoayuda,Harper Lee,alto,alto
+José Guerrero Sánchez,cliente981@cliente.com,5091.7,16.575,Fantasia,Johanna Spyri,alto,alto
+Ramón López Zamora,cliente982@cliente.com,5355.525,17.415,Historia,Jared Diamond,alto,alto
+Santiago Castillo León,cliente983@cliente.com,2768.875,10.295,Infantil,Aldous Huxley,alto,alto
+Fernanda Ávila Chávez,cliente984@cliente.com,1578.65,5.985,Infantil,Johanna Spyri,bajo,medio
+Verónica Vargas Cruz,cliente985@cliente.com,932.35,3.33,Autoayuda,Viktor Frankl,medio,medio
+Miguel Molina Ponce,cliente986@cliente.com,491.25,1.66,Autoayuda,Fiodor Dostoievski,bajo,medio
+Verónica Rivera Díaz,cliente987@cliente.com,1391.6,4.28,Literatura,Franz Kafka,bajo,medio
+Sofía Reyes Barría,cliente988@cliente.com,522.25,1.725,Fantasia,Orson Scott Card,bajo,bajo
+Silvia Castillo Bustos,cliente989@cliente.com,4604.25,14.16,Tecnologia,William Faulkner,alto,alto
+Tomás Chávez Ortiz,cliente990@cliente.com,757.25,2.31,Historia,Jose Saramago,medio,alto
+Gloria Peña Muñoz,cliente991@cliente.com,946.725,4.075,Ciencia Ficcion,Rick Riordan,bajo,medio
+Mónica Rivera Rodríguez,cliente992@cliente.com,986.45,3.33,Literatura,Charles C. Mann,bajo,medio
+María Sánchez Navarrete,cliente993@cliente.com,2929.525,9.885,Literatura,Julio Cortazar,alto,alto
+Kevin Montero Cabrera,cliente994@cliente.com,1182.0,3.665,Infantil,J.R.R. Tolkien,bajo,medio
+Carolina Sánchez Castillo,cliente995@cliente.com,4369.175,14.14,Historia,Malcolm Gladwell,alto,alto
+Juan Rangel Flores,cliente996@cliente.com,1315.7,5.205,Autoayuda,Carol Dweck,bajo,medio
+Ronald Jiménez Silva,cliente997@cliente.com,2798.15,10.545,Ciencia Ficcion,Douglas Adams,alto,alto
+Tomás Vega Flores,cliente998@cliente.com,1439.9,4.815,Literatura,Franz Kafka,bajo,medio
+Luis López Flores,cliente999@cliente.com,1182.125,4.39,Ciencia Ficcion,Aldous Huxley,medio,medio
+Florencia Vega Torres,cliente1000@cliente.com,3920.975,13.85,Misterio,Jack Weatherford,alto,alto
