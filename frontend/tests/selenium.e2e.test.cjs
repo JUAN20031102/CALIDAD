@@ -118,3 +118,65 @@ test('CP-004: La ruta de libros carga sin romper la aplicación', async () => {
     await driver.quit();
   }
 });
+
+test('CP-005: Login valida campos obligatorios', async () => {
+  const driver = await crearDriver();
+
+  try {
+    await abrir(driver, '/login');
+
+    const email = await driver.findElement(By.css('input[type="email"]'));
+    const password = await driver.findElement(By.css('input[type="password"]'));
+    const boton = await driver.findElement(By.css('form button'));
+
+    await boton.click();
+
+    const emailVacio = await driver.executeScript(
+      'return arguments[0].validity.valueMissing;',
+      email
+    );
+
+    const passwordVacio = await driver.executeScript(
+      'return arguments[0].validity.valueMissing;',
+      password
+    );
+
+    assert.ok(emailVacio);
+    assert.ok(passwordVacio);
+  } finally {
+    await driver.quit();
+  }
+});
+
+test('CP-008: Usuario sin sesión no puede acceder al administrador', async () => {
+  const driver = await crearDriver();
+
+  try {
+    await abrir(driver, '/admin');
+
+    await driver.wait(async () => {
+      const url = await driver.getCurrentUrl();
+      const body = await driver.findElement(By.css('body')).getText();
+
+      return (
+        url.includes('/login') ||
+        body.includes('Iniciar sesión') ||
+        body.includes('Acceso denegado') ||
+        body.includes('No autorizado')
+      );
+    }, 10000);
+
+    const url = await driver.getCurrentUrl();
+    const body = await driver.findElement(By.css('body')).getText();
+
+    const accesoBloqueado =
+      url.includes('/login') ||
+      body.includes('Iniciar sesión') ||
+      body.includes('Acceso denegado') ||
+      body.includes('No autorizado');
+
+    assert.ok(accesoBloqueado);
+  } finally {
+    await driver.quit();
+  }
+});

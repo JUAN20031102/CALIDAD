@@ -1,12 +1,14 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'secreto_local_2026';
-
-function generarToken(payload) {
-  return jwt.sign(payload, JWT_SECRET, { expiresIn: '7d' });
+const JWT_SECRET = process.env.JWT_SECRET;
+if (!JWT_SECRET) {
+  throw new Error('JWT_SECRET no está configurado. Define JWT_SECRET en las variables de entorno.');
 }
 
-// Autentica cualquier usuario (cliente o admin)
+function generarToken(payload) {
+  return jwt.sign(payload, JWT_SECRET, { expiresIn: '2h' });
+}
+
 function autenticar(req, res, next) {
   const header = req.headers.authorization;
   if (!header || !header.startsWith('Bearer ')) {
@@ -18,11 +20,10 @@ function autenticar(req, res, next) {
     req.usuario = decoded;
     next();
   } catch (e) {
-    return res.status(401).json({ msg: 'Token invalido o expirado' });
+    return res.status(401).json({ msg: 'Token inválido o expirado' });
   }
 }
 
-// Solo administradores
 function soloAdmin(req, res, next) {
   if (!req.usuario || req.usuario.rol !== 'admin') {
     return res.status(403).json({ msg: 'Acceso restringido a administradores' });
@@ -30,4 +31,4 @@ function soloAdmin(req, res, next) {
   next();
 }
 
-module.exports = { generarToken, autenticar, soloAdmin, JWT_SECRET };
+module.exports = { generarToken, autenticar, soloAdmin };

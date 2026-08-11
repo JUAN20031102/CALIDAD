@@ -4,6 +4,7 @@ const Cliente = require('../models/Cliente');
 const Administrador = require('../models/Administrador');
 const Seguimiento = require('../models/Seguimiento');
 const { generarToken, autenticar } = require('../middlewares/auth');
+const { validarRegistroCliente, validarLogin, validarBody } = require('../middlewares/validacion');
 
 const router = express.Router();
 
@@ -34,27 +35,25 @@ router.get('/verify', autenticar, async (req, res) => {
     }
     res.json({ usuario: datos });
   } catch (e) {
-    res.status(500).json({ msg: 'Error al verificar sesion' });
+    res.status(500).json({ msg: 'Error al verificar sesión' });
   }
 });
 
 // Registro de cliente
-router.post('/registro/cliente', async (req, res) => {
+router.post('/registro/cliente', validarBody(validarRegistroCliente), async (req, res) => {
   try {
     const {
       nombre, email, celular, password, profesion, edad,
       frecuenciaLectura, preferenciasCategorias, autores
     } = req.body;
-    if (!nombre || !email || !password) {
-      return res.status(400).json({ msg: 'Nombre, email y password son obligatorios' });
-    }
-    const existe = await Cliente.findOne({ email: email.toLowerCase() });
-    if (existe) return res.status(400).json({ msg: 'El email ya esta registrado' });
 
-    const hash = await bcrypt.hash(password, 10);
+    const existe = await Cliente.findOne({ email });
+    if (existe) return res.status(400).json({ msg: 'El email ya está registrado' });
+
+    const hash = await bcrypt.hash(password, 12);
     const cliente = await Cliente.create({
       nombre,
-      email: email.toLowerCase(),
+      email,
       celular: celular || '',
       password: hash,
       profesion: profesion || '',
@@ -64,7 +63,6 @@ router.post('/registro/cliente', async (req, res) => {
       autores: autores || []
     });
 
-    // Se crea el seguimiento inicial del cliente (tabla de tracking)
     await Seguimiento.create({ cliente: cliente._id });
 
     const token = generarToken({ id: cliente._id, email: cliente.email, rol: 'cliente' });
@@ -89,24 +87,23 @@ router.post('/registro/cliente', async (req, res) => {
   }
 });
 
-// Login generico (detecta cliente o admin)
-router.post('/login', async (req, res) => {
+// Login genérico (detecta cliente o admin)
+router.post('/login', validarBody(validarLogin), async (req, res) => {
   try {
     const { email, password } = req.body;
-    if (!email || !password) return res.status(400).json({ msg: 'Email y password son obligatorios' });
 
-    let usuario = await Cliente.findOne({ email: email.toLowerCase() });
+    let usuario = await Cliente.findOne({ email });
     let rol = 'cliente';
 
     if (!usuario) {
-      usuario = await Administrador.findOne({ email: email.toLowerCase() });
+      usuario = await Administrador.findOne({ email });
       rol = 'admin';
     }
 
-    if (!usuario) return res.status(401).json({ msg: 'Credenciales invalidas' });
+    if (!usuario) return res.status(401).json({ msg: 'Credenciales inválidas' });
 
     const valido = await bcrypt.compare(password, usuario.password);
-    if (!valido) return res.status(401).json({ msg: 'Credenciales invalidas' });
+    if (!valido) return res.status(401).json({ msg: 'Credenciales inválidas' });
 
     const token = generarToken({ id: usuario._id, email: usuario.email, rol });
     res.json({
@@ -126,7 +123,7 @@ router.post('/login', async (req, res) => {
     });
   } catch (e) {
     console.error(e);
-    res.status(500).json({ msg: 'Error al iniciar sesion' });
+    res.status(500).json({ msg: 'Error al iniciar sesión' });
   }
 });
 

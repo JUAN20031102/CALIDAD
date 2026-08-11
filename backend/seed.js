@@ -256,7 +256,9 @@ async function seed() {
       Seguimiento.deleteMany({})
     ]);
 
-    const hashAdmin = await bcrypt.hash('admin123', 10);
+    const adminPassword = process.env.SEED_ADMIN_PASSWORD || 'admin123';
+    const clientPassword = process.env.SEED_CLIENT_PASSWORD || 'cliente123';
+    const hashAdmin = await bcrypt.hash(adminPassword, 12);
     await Administrador.create({ nombre: 'Administrador Principal', email: 'admin@libreria.com', password: hashAdmin });
 
     await Libro.insertMany(LIBROS);
@@ -265,7 +267,7 @@ async function seed() {
     libros.forEach(l => { if (!librosPorCategoria[l.categoria]) librosPorCategoria[l.categoria] = []; librosPorCategoria[l.categoria].push(l); });
     console.log(`  ${libros.length} libros cargados (${Object.keys(librosPorCategoria).length} categorias)`);
 
-    const hashCli = await bcrypt.hash('cliente123', 10);
+    const hashCli = await bcrypt.hash(clientPassword, 12);
     const clientes = await Cliente.insertMany(CLIENTES.map(c => ({ ...c, password: hashCli })));
     console.log(`  ${clientes.length} clientes creados`);
 
@@ -311,8 +313,8 @@ async function seed() {
 
     console.log(`  ${totalVentas} ventas simuladas, gasto total: $${totalGasto.toFixed(2)}`);
     console.log('Accesos:');
-    console.log('  Admin -> admin@libreria.com / admin123');
-    console.log('  Cliente -> cliente1@cliente.com / cliente123 (y cliente2..cliente10)');
+    console.log(`  Admin -> admin@libreria.com / ${adminPassword}`);
+    console.log(`  Cliente -> cliente1@cliente.com / ${clientPassword} (y cliente2..cliente10)`);
     console.log('Seed completado exitosamente!');
   } catch (e) {
     console.error('Error en el seed:', e.message);

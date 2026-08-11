@@ -3,10 +3,11 @@ const Carrito = require('../models/Carrito');
 const Libro = require('../models/Libro');
 const Seguimiento = require('../models/Seguimiento');
 const { autenticar } = require('../middlewares/auth');
+const { validarCarritoAgregar, validarCarritoActualizar, validarObjectId, validarBody } = require('../middlewares/validacion');
 
 const router = express.Router();
 
-// Todas las rutas requieren sesion de cliente
+// Todas las rutas requieren sesión de cliente
 router.use(autenticar, (req, res, next) => {
   if (req.usuario.rol !== 'cliente') return res.status(403).json({ msg: 'Solo clientes' });
   next();
@@ -17,7 +18,6 @@ async function registrarSeguimiento(clienteId, libro, cantidad, tipo) {
   if (!seg) seg = await Seguimiento.create({ cliente: clienteId });
 
   if (tipo === 'agregar') {
-    // Historial de agregados al carrito
     seg.agregadosCarrito.push({
       libro: libro._id,
       titulo: libro.titulo,
@@ -27,11 +27,9 @@ async function registrarSeguimiento(clienteId, libro, cantidad, tipo) {
       precio: libro.precio,
       cantidad
     });
-    // Limitar historial a 100 registros
     if (seg.agregadosCarrito.length > 100) seg.agregadosCarrito.shift();
   }
 
-  // Preferencias por categoria (incrementa contador)
   const pref = seg.preferenciasCategorias.find(p => p.categoria === libro.categoria);
   if (pref) pref.contador += cantidad;
   else seg.preferenciasCategorias.push({ categoria: libro.categoria, contador: cantidad });
@@ -56,7 +54,7 @@ router.get('/', async (req, res) => {
 });
 
 // Agregar libro al carrito
-router.post('/agregar', async (req, res) => {
+router.post('/agregar', validarBody(validarCarritoAgregar), async (req, res) => {
   try {
     const { libroId, cantidad } = req.body;
     const libro = await Libro.findById(libroId);
@@ -81,7 +79,6 @@ router.post('/agregar', async (req, res) => {
     carrito.actualizadoEn = new Date();
     await carrito.save();
 
-    // Registrar en la tabla de seguimiento
     await registrarSeguimiento(req.usuario.id, libro, cant, 'agregar');
 
     res.json(carrito);
@@ -92,7 +89,7 @@ router.post('/agregar', async (req, res) => {
 });
 
 // Actualizar cantidad
-router.put('/item/:libroId', async (req, res) => {
+router.put('/item/:libroId', validarObjectId, validarBody(validarCarritoActualizar), async (req, res) => {
   try {
     const { cantidad } = req.body;
     const carrito = await Carrito.findOne({ cliente: req.usuario.id });
@@ -108,12 +105,13 @@ router.put('/item/:libroId', async (req, res) => {
     await carrito.save();
     res.json(carrito);
   } catch (e) {
+    console.error(e);
     res.status(400).json({ msg: 'Error al actualizar carrito' });
   }
 });
 
 // Eliminar item del carrito
-router.delete('/item/:libroId', async (req, res) => {
+router.delete('/item/:libroId', validarObjectId, async (req, res) => {
   try {
     const carrito = await Carrito.findOne({ cliente: req.usuario.id });
     if (!carrito) return res.status(404).json({ msg: 'Carrito no encontrado' });
@@ -122,6 +120,7 @@ router.delete('/item/:libroId', async (req, res) => {
     await carrito.save();
     res.json(carrito);
   } catch (e) {
+    console.error(e);
     res.status(400).json({ msg: 'Error al eliminar item' });
   }
 });
@@ -137,6 +136,7 @@ router.delete('/', async (req, res) => {
     }
     res.json({ msg: 'Carrito vaciado' });
   } catch (e) {
+    console.error(e);
     res.status(400).json({ msg: 'Error al vaciar carrito' });
   }
 });

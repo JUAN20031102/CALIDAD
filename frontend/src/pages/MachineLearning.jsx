@@ -277,10 +277,9 @@ export default function MachineLearning() {
                   <tbody>{similares.map((c, i) => <ClienteSimilar key={i} c={c} />)}</tbody></table></div>
                 </div>
               )}
-            </div></div>
+</div></div>
           </div>
         </div>
-      )}
-    </div>
+      </div>
   );
 }

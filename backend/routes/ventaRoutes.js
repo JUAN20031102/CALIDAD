@@ -1,10 +1,12 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const Venta = require('../models/Venta');
 const Carrito = require('../models/Carrito');
 const Libro = require('../models/Libro');
 const Seguimiento = require('../models/Seguimiento');
 const Cliente = require('../models/Cliente');
 const { autenticar } = require('../middlewares/auth');
+const { validarObjectId } = require('../middlewares/validacion');
 
 const router = express.Router();
 
@@ -20,32 +22,40 @@ function formatearFecha(fecha) {
   return `${d.getUTCFullYear()}-${mes}-${dia}`;
 }
 
-// Realizar compra (checkout del carrito)
+// Realizar compra (checkout del carrito) - usa transacción MongoDB
 router.post('/checkout', autenticar, async (req, res) => {
-  try {
-    if (req.usuario.rol !== 'cliente') return res.status(403).json({ msg: 'Solo clientes' });
+  const session = await mongoose.startSession();
+  session.startTransaction();
 
-    const carrito = await Carrito.findOne({ cliente: req.usuario.id });
-    if (!carrito || carrito.items.length === 0) {
-      return res.status(400).json({ msg: 'El carrito esta vacio' });
+  try {
+    if (req.usuario.rol !== 'cliente') {
+      return res.status(403).json({ msg: 'Solo clientes' });
     }
 
-    // Validar stock y descontar
+    const carrito = await Carrito.findOne({ cliente: req.usuario.id }).session(session);
+    if (!carrito || carrito.items.length === 0) {
+      return res.status(400).json({ msg: 'El carrito está vacío' });
+    }
+
+    // Validar stock y descontar atómicamente dentro de la transacción
     for (const item of carrito.items) {
-      const libro = await Libro.findById(item.libro);
-      if (!libro) return res.status(404).json({ msg: `Libro ${item.titulo} no encontrado` });
+      const libro = await Libro.findById(item.libro).session(session);
+      if (!libro) {
+        await session.abortTransaction();
+        return res.status(404).json({ msg: `Libro ${item.titulo} no encontrado` });
+      }
       if (libro.stock < item.cantidad) {
+        await session.abortTransaction();
         return res.status(400).json({ msg: `Stock insuficiente de "${item.titulo}" (disponible: ${libro.stock})` });
       }
-    }
-    for (const item of carrito.items) {
-      await Libro.findByIdAndUpdate(item.libro, { $inc: { stock: -item.cantidad } });
+      await Libro.findByIdAndUpdate(item.libro, { $inc: { stock: -item.cantidad } }, { session });
     }
 
     const total = carrito.items.reduce((acc, i) => acc + i.precio * i.cantidad, 0);
 
-    const venta = await Venta.create({
+    const venta = await Venta.create([{
       cliente: req.usuario.id,
+      nombreCliente: req.usuario.nombre,
       items: carrito.items.map(i => ({
         libro: i.libro,
         titulo: i.titulo,
@@ -55,27 +65,32 @@ router.post('/checkout', autenticar, async (req, res) => {
         precio: i.precio,
         cantidad: i.cantidad
       })),
-      total
-    });
+      total,
+      estado: 'Pagada'
+    }], { session });
 
     // Actualizar seguimiento con la compra
-    let seg = await Seguimiento.findOne({ cliente: req.usuario.id });
-    if (!seg) seg = await Seguimiento.create({ cliente: req.usuario.id });
-    seg.compras.push({ venta: venta._id, total, fecha: venta.fecha });
+    let seg = await Seguimiento.findOne({ cliente: req.usuario.id }).session(session);
+    if (!seg) seg = await Seguimiento.create([{ cliente: req.usuario.id }], { session });
+    seg.compras.push({ venta: venta[0]._id, total, fecha: venta[0].fecha });
     seg.gastoTotal += total;
     seg.totalCompras += 1;
     seg.actualizadoEn = new Date();
-    await seg.save();
+    await seg.save({ session });
 
     // Vaciar carrito
     carrito.items = [];
     carrito.actualizadoEn = new Date();
-    await carrito.save();
+    await carrito.save({ session });
 
-    res.status(201).json(venta);
+    await session.commitTransaction();
+    res.status(201).json(venta[0]);
   } catch (e) {
+    await session.abortTransaction();
     console.error(e);
     res.status(500).json({ msg: 'Error al realizar la compra' });
+  } finally {
+    await session.endSession();
   }
 });
 
@@ -85,6 +100,7 @@ router.get('/mias', autenticar, async (req, res) => {
     const ventas = await Venta.find({ cliente: req.usuario.id }).sort({ fecha: -1 });
     res.json(ventas);
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error al obtener compras' });
   }
 });
@@ -96,6 +112,7 @@ router.get('/todas', autenticar, async (req, res) => {
     const ventas = await Venta.find().sort({ fecha: -1 });
     res.json(ventas);
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error al obtener ventas' });
   }
 });
@@ -109,7 +126,6 @@ router.get('/reporte', autenticar, async (req, res) => {
     const librosVendidos = ventas.reduce((a, v) => a + v.items.reduce((x, i) => x + i.cantidad, 0), 0);
     const ventasMes = (await Venta.find({ fecha: { $gte: new Date(new Date().setDate(1)) } })).length;
 
-    // Top libros mas vendidos
     const mapa = {};
     ventas.forEach(v => v.items.forEach(i => {
       if (!mapa[i.titulo]) mapa[i.titulo] = { titulo: i.titulo, cantidad: 0, ingreso: 0 };
@@ -118,7 +134,6 @@ router.get('/reporte', autenticar, async (req, res) => {
     }));
     const topLibros = Object.values(mapa).sort((a, b) => b.cantidad - a.cantidad).slice(0, 5);
 
-    // Ventas por categoria (para grafica)
     const porCategoria = {};
     ventas.forEach(v => v.items.forEach(i => {
       const cat = i.categoria || 'Sin categoría';
@@ -128,7 +143,6 @@ router.get('/reporte', autenticar, async (req, res) => {
     }));
     const ventasPorCategoria = Object.values(porCategoria).sort((a, b) => b.ingreso - a.ingreso);
 
-    // Ventas de los ultimos 30 dias (para grafica de tendencia)
     const dias = new Map();
     for (let i = 29; i >= 0; i--) {
       const d = new Date();
@@ -146,6 +160,7 @@ router.get('/reporte', autenticar, async (req, res) => {
 
     res.json({ totalVentas: ventas.length, totalVendido, librosVendidos, ventasMes, topLibros, ventasPorCategoria, ventasPorDia });
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error al obtener reporte' });
   }
 });
@@ -156,7 +171,7 @@ router.get('/reporte/csv', autenticar, async (req, res) => {
     if (req.usuario.rol !== 'admin') return res.status(403).json({ msg: 'Solo administradores' });
     const ventas = await Venta.find().sort({ fecha: 1 });
 
-    let csv = '\uFEFF'; // BOM para que Excel lea bien los acentos
+    let csv = '\uFEFF';
     csv += [
       'ID Venta', 'Fecha', 'Cliente', 'Email', 'Libro', 'Categoria', 'Autor',
       'Precio', 'Cantidad', 'Subtotal', 'Total venta', 'Estado'
@@ -182,6 +197,7 @@ router.get('/reporte/csv', autenticar, async (req, res) => {
     res.setHeader('Content-Disposition', 'attachment; filename="reporte_ventas.csv"');
     res.send(csv);
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error al generar CSV de ventas' });
   }
 });

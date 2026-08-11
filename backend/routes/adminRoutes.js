@@ -5,15 +5,22 @@ const Cliente = require('../models/Cliente');
 const Seguimiento = require('../models/Seguimiento');
 const Venta = require('../models/Venta');
 const { autenticar, soloAdmin } = require('../middlewares/auth');
+const { validarObjectId, validarBody } = require('../middlewares/validacion');
+const Joi = require('joi');
 
 const router = express.Router();
+
+const validarAdmin = Joi.object({
+  nombre: Joi.string().min(2).max(100).required(),
+  email: Joi.string().email().lowercase().required(),
+  password: Joi.string().min(8).max(128).required()
+});
 
 function escaparCsv(valor) {
   const texto = valor == null ? '' : String(valor);
   return `"${texto.replace(/"/g, '""')}"`;
 }
 
-// Expande un array en columnas fijas (vacio si no hay datos) para machine learning
 function expandirColumnas(arr, prefijo, total) {
   const valores = (arr || []);
   const fila = [];
@@ -23,59 +30,55 @@ function expandirColumnas(arr, prefijo, total) {
   return fila;
 }
 
-// Todas las rutas requieren admin
 router.use(autenticar, soloAdmin);
 
-// Crear un nuevo administrador
-router.post('/administradores', async (req, res) => {
+router.post('/administradores', validarBody(validarAdmin), async (req, res) => {
   try {
     const { nombre, email, password } = req.body;
-    if (!nombre || !email || !password) return res.status(400).json({ msg: 'Faltan datos' });
-    const hash = await bcrypt.hash(password, 10);
-    const admin = await Administrador.create({ nombre, email: email.toLowerCase(), password: hash });
+    const hash = await bcrypt.hash(password, 12);
+    const admin = await Administrador.create({ nombre, email, password: hash });
     res.status(201).json({ id: admin._id, nombre: admin.nombre, email: admin.email });
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error al crear administrador' });
   }
 });
 
-// Listar administradores
 router.get('/administradores', async (req, res) => {
   try {
     const admins = await Administrador.find().select('-password');
     res.json(admins);
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error al listar administradores' });
   }
 });
 
-// Listar clientes registrados
 router.get('/clientes', async (req, res) => {
   try {
     const clientes = await Cliente.find().select('-password');
     res.json(clientes);
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error al listar clientes' });
   }
 });
 
-// Actualizar preferencias de categoria de un cliente (el admin puede ajustar)
-router.put('/clientes/:id', async (req, res) => {
+router.put('/clientes/:id', validarObjectId, async (req, res) => {
   try {
-    const cliente = await Cliente.findByIdAndUpdate(req.params.id, req.body, { new: true }).select('-password');
+    const cliente = await Cliente.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true }).select('-password');
     if (!cliente) return res.status(404).json({ msg: 'Cliente no encontrado' });
     res.json(cliente);
   } catch (e) {
+    console.error(e);
     res.status(400).json({ msg: 'Error al actualizar cliente' });
   }
 });
 
-// Estado de la configuracion de ofertas por correo
 router.get('/configuracion/ofertas', async (req, res) => {
   res.json({ emailActivado: false });
 });
 
-// Reporte de preferencias de cada cliente
 router.get('/reportes/preferencias', async (req, res) => {
   try {
     const [clientes, seguimientos] = await Promise.all([
@@ -111,7 +114,6 @@ router.get('/reportes/preferencias', async (req, res) => {
   }
 });
 
-// Descargar reporte de preferencias en CSV
 router.get('/reportes/preferencias/csv', async (req, res) => {
   try {
     const [clientes, ventas] = await Promise.all([

@@ -7,7 +7,7 @@ const { autenticar } = require('../middlewares/auth');
 
 const router = express.Router();
 
-// Ofertas personalizadas segun las preferencias del cliente logueado
+// Ofertas personalizadas según preferencias del cliente
 router.get('/', autenticar, async (req, res) => {
   try {
     if (req.usuario.rol !== 'cliente') return res.json([]);
@@ -19,7 +19,6 @@ router.get('/', autenticar, async (req, res) => {
       Venta.find({ cliente: clienteId })
     ]);
 
-    // Categorias preferidas: registro del cliente + interacciones de seguimiento
     const pesos = {};
     const sumar = (cat, peso) => {
       if (!cat) return;
@@ -31,7 +30,6 @@ router.get('/', autenticar, async (req, res) => {
       (seg.preferenciasCategorias || []).forEach(p => sumar(p.categoria, p.contador || 1));
     }
 
-    // Excluir libros que ya compro
     const excluir = new Set();
     ventas.forEach(v => v.items.forEach(i => {
       if (i.libro) excluir.add(i.libro.toString());
@@ -58,7 +56,7 @@ router.get('/', autenticar, async (req, res) => {
   }
 });
 
-// Todas las ofertas disponibles (publico, para la pagina de ofertas)
+// Todas las ofertas disponibles (público)
 router.get('/todas', async (req, res) => {
   try {
     const ofertas = await Libro.find({ precioOferta: { $ne: null }, stock: { $gt: 0 } })

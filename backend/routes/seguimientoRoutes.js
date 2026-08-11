@@ -2,11 +2,12 @@ const express = require('express');
 const Seguimiento = require('../models/Seguimiento');
 const Libro = require('../models/Libro');
 const { autenticar, soloAdmin } = require('../middlewares/auth');
+const { validarSeguimientoGusto, validarObjectId, validarBody } = require('../middlewares/validacion');
 
 const router = express.Router();
 
-// Tabla de seguimiento: registrar libro que le gusta al cliente
-router.post('/gusto', autenticar, async (req, res) => {
+// Registrar libro que le gusta al cliente
+router.post('/gusto', autenticar, validarBody(validarSeguimientoGusto), async (req, res) => {
   try {
     if (req.usuario.rol !== 'cliente') return res.status(403).json({ msg: 'Solo clientes' });
     const { libroId, gustar } = req.body;
@@ -18,7 +19,7 @@ router.post('/gusto', autenticar, async (req, res) => {
 
     const yaExiste = seg.gustos.some(g => g.libro.toString() === libroId);
 
-    if (gustar === true || gustar === 'true') {
+    if (gustar) {
       if (!yaExiste) {
         seg.gustos.push({
           libro: libro._id,
@@ -28,7 +29,6 @@ router.post('/gusto', autenticar, async (req, res) => {
           portada: libro.portada
         });
       }
-      // Incrementar preferencia de categoria
       const pref = seg.preferenciasCategorias.find(p => p.categoria === libro.categoria);
       if (pref) pref.contador += 1;
       else seg.preferenciasCategorias.push({ categoria: libro.categoria, contador: 1 });
@@ -47,7 +47,7 @@ router.post('/gusto', autenticar, async (req, res) => {
   }
 });
 
-// Obtener seguimiento del cliente logueado (sus gustos, preferencias, actividad)
+// Obtener seguimiento del cliente logueado
 router.get('/mio', autenticar, async (req, res) => {
   try {
     if (req.usuario.rol !== 'cliente') return res.status(403).json({ msg: 'Solo clientes' });
@@ -57,7 +57,6 @@ router.get('/mio', autenticar, async (req, res) => {
       .populate('compras.venta');
     if (!seg) seg = await Seguimiento.create({ cliente: req.usuario.id });
 
-    // Ordenar preferencias de mayor a menor
     seg.preferenciasCategorias.sort((a, b) => b.contador - a.contador);
     res.json(seg);
   } catch (e) {
@@ -66,14 +65,15 @@ router.get('/mio', autenticar, async (req, res) => {
   }
 });
 
-// Para saber si el cliente ya "gusta" un libro
-router.get('/gusto/:libroId', autenticar, async (req, res) => {
+// Ver si el cliente ya "gusta" un libro
+router.get('/gusto/:libroId', autenticar, validarObjectId, async (req, res) => {
   try {
     if (req.usuario.rol !== 'cliente') return res.status(403).json({ msg: 'Solo clientes' });
     const seg = await Seguimiento.findOne({ cliente: req.usuario.id });
     const gustado = !!(seg && seg.gustos.some(g => g.libro.toString() === req.params.libroId));
     res.json({ gustado });
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error' });
   }
 });
@@ -86,12 +86,13 @@ router.get('/todos', autenticar, soloAdmin, async (req, res) => {
       .populate('gustos.libro', 'titulo autor categoria portada');
     res.json(registros);
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error al obtener seguimientos' });
   }
 });
 
-// Ver seguimiento de un cliente especifico (solo admin)
-router.get('/:clienteId', autenticar, soloAdmin, async (req, res) => {
+// Ver seguimiento de un cliente específico (solo admin)
+router.get('/:clienteId', autenticar, soloAdmin, validarObjectId, async (req, res) => {
   try {
     const seg = await Seguimiento.findOne({ cliente: req.params.clienteId })
       .populate('cliente', 'nombre email')
@@ -101,6 +102,7 @@ router.get('/:clienteId', autenticar, soloAdmin, async (req, res) => {
     if (!seg) return res.status(404).json({ msg: 'Sin seguimiento para ese cliente' });
     res.json(seg);
   } catch (e) {
+    console.error(e);
     res.status(500).json({ msg: 'Error al obtener seguimiento' });
   }
 });

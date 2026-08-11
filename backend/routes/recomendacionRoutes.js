@@ -4,10 +4,11 @@ const Libro = require('../models/Libro');
 const Venta = require('../models/Venta');
 const Carrito = require('../models/Carrito');
 const { autenticar } = require('../middlewares/auth');
+const { validarObjectId } = require('../middlewares/validacion');
 
 const router = express.Router();
 
-// Recomendaciones personalizadas basadas en el seguimiento del cliente
+// Recomendaciones personalizadas basadas en seguimiento del cliente
 router.get('/', autenticar, async (req, res) => {
   try {
     if (req.usuario.rol !== 'cliente') return res.json([]);
@@ -19,17 +20,15 @@ router.get('/', autenticar, async (req, res) => {
       Carrito.findOne({ cliente: clienteId })
     ]);
 
-    const pesos = {};       // peso por categoria
-    const excluir = new Set(); // ids que ya conoce el cliente
+    const pesos = {};
+    const excluir = new Set();
 
-    // Compras: senal mas fuerte
     ventas.forEach(v => v.items.forEach(it => {
       if (it.libro) excluir.add(it.libro.toString());
       if (!it.categoria) return;
       pesos[it.categoria] = (pesos[it.categoria] || 0) + (it.cantidad || 1) * 3;
     }));
 
-    // Libros que le gustan
     if (seg) {
       seg.gustos.forEach(g => {
         if (g.libro) excluir.add(g.libro.toString());
@@ -37,13 +36,11 @@ router.get('/', autenticar, async (req, res) => {
         pesos[g.categoria] = (pesos[g.categoria] || 0) + 1;
       });
 
-      // Preferencias acumuladas de categoria
       seg.preferenciasCategorias.forEach(p => {
         pesos[p.categoria] = (pesos[p.categoria] || 0) + p.contador * 2;
       });
     }
 
-    // Lo que ya tiene en el carrito tambien se excluye
     if (carrito) carrito.items.forEach(i => excluir.add(i.libro.toString()));
 
     const categoriasOrdenadas = Object.entries(pesos)

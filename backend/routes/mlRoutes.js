@@ -2,11 +2,13 @@ const express = require('express');
 const { execFile } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const Joi = require('joi');
 
 const Cliente = require('../models/Cliente');
 const Venta = require('../models/Venta');
 const Libro = require('../models/Libro');
 const { autenticar, soloAdmin } = require('../middlewares/auth');
+const { validarBody } = require('../middlewares/validacion');
 
 const router = express.Router();
 
@@ -23,6 +25,22 @@ const PREDICCIONES_FILE = path.join(MODELOS_DIR, 'predicciones.csv');
 const JSON_COLS = ['NOMBRE', 'EMAIL', 'CELULAR', 'PROFESION', 'EDAD', 'FRECUENCIA_LECTURA',
   'CAT1', 'CAT2', 'CAT3', 'AUT1', 'AUT2', 'AUT3', 'GASTO_TOTAL', 'TOTAL_LIBROS',
   'CATEGORIA_COMPRA', 'AUTOR_COMPRA', 'NIVEL_GASTO', 'NIVEL_LECTURA'];
+
+const validarPredecir = Joi.object({
+  edad: Joi.number().integer().min(1).max(120).optional(),
+  profesion: Joi.string().max(50).allow('').optional(),
+  frecuenciaLectura: Joi.string().valid('A diario', 'Varias veces por semana', 'Semanal', 'Mensual', 'Casi nunca').allow('').optional(),
+  categorias: Joi.array().items(Joi.string().max(50)).max(10).default([]).optional(),
+  autores: Joi.array().items(Joi.string().max(100)).max(10).default([]).optional()
+});
+
+const validarSimilares = Joi.object({
+  edad: Joi.number().integer().min(1).max(120).optional(),
+  profesion: Joi.string().max(50).allow('').optional(),
+  frecuenciaLectura: Joi.string().valid('A diario', 'Varias veces por semana', 'Semanal', 'Mensual', 'Casi nunca').allow('').optional(),
+  categorias: Joi.array().items(Joi.string().max(50)).max(10).default([]).optional(),
+  autores: Joi.array().items(Joi.string().max(100)).max(10).default([]).optional()
+});
 
 function escapar(v) {
   const t = v == null ? '' : String(v);
@@ -64,7 +82,6 @@ function ejecutarPython(script, args) {
   });
 }
 
-// Construye el dataset plano con objetivos + nivel de gasto por terciles
 async function construirDataset() {
   const [clientes, ventas] = await Promise.all([Cliente.find().select('-password'), Venta.find()]);
   const comprasPorCliente = new Map();
@@ -112,7 +129,6 @@ async function construirDataset() {
     });
   });
 
-  // Terciles del gasto (bajo / medio / alto)
   const gastos = filas.filter(f => f._gasto > 0).map(f => f._gasto).sort((a, b) => a - b);
   if (gastos.length) {
     const q1 = gastos[Math.floor(gastos.length * 0.33)];
@@ -135,10 +151,8 @@ function csvDesdeFilas(filas) {
   return csv;
 }
 
-// Solo el admin puede usar este modulo
 router.use(autenticar, soloAdmin);
 
-// Estado del entrenamiento (que modelos estan listos)
 router.get('/estado', (req, res) => {
   if (fs.existsSync(ESTADO_FILE)) {
     try {
@@ -152,7 +166,6 @@ router.get('/estado', (req, res) => {
   res.json({ entrenado: false });
 });
 
-// Progreso en vivo del entrenamiento
 router.get('/progreso', (req, res) => {
   if (fs.existsSync(PROGRESO_FILE)) {
     try {
@@ -165,7 +178,6 @@ router.get('/progreso', (req, res) => {
   res.json({ entrenando: false });
 });
 
-// Entrenar modelos
 router.post('/entrenar', async (req, res) => {
   try {
     prepararDirectorios();
@@ -186,7 +198,6 @@ router.post('/entrenar', async (req, res) => {
   }
 });
 
-// Dashboard: metricas + predicciones del dataset para graficas
 router.get('/dashboard', async (req, res) => {
   const estado = fs.existsSync(ESTADO_FILE) ? (() => { try { return JSON.parse(fs.readFileSync(ESTADO_FILE, 'utf8')); } catch (e) { return {}; } })() : {};
   const predicciones = [];
@@ -205,8 +216,7 @@ router.get('/dashboard', async (req, res) => {
   res.json({ entrenado: !!estado.entrenado, ...estado, predicciones });
 });
 
-// Predicciones para un nuevo cliente
-router.post('/predecir', async (req, res) => {
+router.post('/predecir', validarBody(validarPredecir), async (req, res) => {
   try {
     const { edad, profesion, frecuenciaLectura, categorias, autores } = req.body;
     const fila = {
@@ -218,7 +228,6 @@ router.post('/predecir', async (req, res) => {
     };
     fs.writeFileSync(INPUT_FILE, JSON.stringify(fila), 'utf8');
 
-    // Catalogo de libros con popularidad (cantidad total vendida)
     const [libros, ventas] = await Promise.all([Libro.find().lean(), Venta.find().lean()]);
     const pops = {};
     ventas.forEach(v => (v.items || []).forEach(it => {
@@ -238,12 +247,11 @@ router.post('/predecir', async (req, res) => {
     res.json({ ok: true, ...resultado });
   } catch (e) {
     console.error('Error en prediccion:', e.message);
-    res.status(500).json({ msg: 'Error en el modulo de prediccion', detalle: e.message });
+    res.status(500).json({ msg: 'Error en el módulo de predicción', detalle: e.message });
   }
 });
 
-// Obtener clientes similares a las caracteristicas dadas
-router.post('/similares', async (req, res) => {
+router.post('/similares', validarBody(validarSimilares), async (req, res) => {
   try {
     const { edad, profesion, frecuenciaLectura, categorias, autores } = req.body;
     const filtros = {};
