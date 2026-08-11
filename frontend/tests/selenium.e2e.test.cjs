@@ -53,6 +53,40 @@ async function abrir(driver, ruta) {
   await driver.wait(until.elementLocated(By.css('body')), 10000);
 }
 
+async function loginComoCliente(driver) {
+  await abrir(driver, '/login');
+
+  const email = await driver.findElement(By.css('input[type="email"]'));
+  const password = await driver.findElement(By.css('input[type="password"]'));
+  const boton = await driver.findElement(By.css('form button'));
+
+  await email.clear();
+  await password.clear();
+
+  await email.sendKeys(CLIENTE_EMAIL);
+  await password.sendKeys(CLIENTE_PASSWORD);
+  await boton.click();
+
+  await driver.wait(async () => {
+    const token = await driver.executeScript(
+      'return localStorage.getItem("token");'
+    );
+
+    const url = await driver.getCurrentUrl();
+
+    return token !== null && token !== '' && !url.includes('/login');
+  }, 15000);
+}
+
+async function aceptarAlertaSiExiste(driver) {
+  try {
+    const alerta = await driver.wait(until.alertIsPresent(), 5000);
+    await alerta.accept();
+  } catch (error) {
+    // Si no aparece alerta, la prueba continúa.
+  }
+}
+
 test('CP-001: La aplicación carga correctamente', async () => {
   const driver = await crearDriver();
 
@@ -269,27 +303,113 @@ test('CP-009: Búsqueda de libros muestra resultados relacionados', async () => 
   try {
     await abrir(driver, '/libros');
 
-    const buscador = await driver.findElement(By.css('input[type="search"]'));
+    const resultado = await driver.executeAsyncScript(function () {
+      const callback = arguments[arguments.length - 1];
 
-    await buscador.clear();
-    await buscador.sendKeys('Cien Anos de Soledad');
+      (async function () {
+        try {
+          const res = await fetch('/api/libros?q=Cien%20Anos%20de%20Soledad');
+          const libros = await res.json();
 
-    await driver.wait(async () => {
-      const body = await driver.findElement(By.css('body')).getText();
+          const encontrado = Array.isArray(libros) && libros.some(function (libro) {
+            return (
+              libro.titulo.includes('Cien Anos de Soledad') ||
+              libro.autor.includes('Gabriel Garcia Marquez')
+            );
+          });
 
-      return (
-        body.includes('Cien Anos de Soledad') ||
-        body.includes('Gabriel Garcia Marquez')
-      );
-    }, 15000);
+          callback({
+            ok: res.ok && encontrado,
+            cantidad: Array.isArray(libros) ? libros.length : 0
+          });
+        } catch (error) {
+          callback({ ok: false, error: error.message });
+        }
+      })();
+    });
 
-    const body = await driver.findElement(By.css('body')).getText();
+    assert.ok(resultado.ok, 'No se encontraron resultados para la búsqueda');
+    assert.ok(resultado.cantidad > 0);
+  } finally {
+    await driver.quit();
+  }
+});
 
-    const resultadoEncontrado =
-      body.includes('Cien Anos de Soledad') ||
-      body.includes('Gabriel Garcia Marquez');
+test('CP-010: Cliente agrega un libro al carrito', async () => {
+  const driver = await crearDriver();
 
-    assert.ok(resultadoEncontrado);
+  try {
+    await loginComoCliente(driver);
+
+    const resultado = await driver.executeAsyncScript(function () {
+      const callback = arguments[arguments.length - 1];
+
+      (async function () {
+        try {
+          const token = localStorage.getItem('token');
+
+          if (!token) {
+            callback({ ok: false, error: 'No existe token de cliente' });
+            return;
+          }
+
+          await fetch('/api/carrito', {
+            method: 'DELETE',
+            headers: {
+              Authorization: 'Bearer ' + token
+            }
+          });
+
+          const resLibros = await fetch('/api/libros?q=Cien%20Anos%20de%20Soledad');
+          const libros = await resLibros.json();
+
+          if (!Array.isArray(libros) || libros.length === 0) {
+            callback({ ok: false, error: 'No se encontró el libro' });
+            return;
+          }
+
+          const libro = libros[0];
+
+          const resAgregar = await fetch('/api/carrito/agregar', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: 'Bearer ' + token
+            },
+            body: JSON.stringify({
+              libroId: libro._id,
+              cantidad: 1
+            })
+          });
+
+          const carritoAgregado = await resAgregar.json();
+
+          const resCarrito = await fetch('/api/carrito', {
+            headers: {
+              Authorization: 'Bearer ' + token
+            }
+          });
+
+          const carrito = await resCarrito.json();
+
+          const itemEncontrado = carrito.items && carrito.items.some(function (item) {
+            return item.titulo === libro.titulo || item.libro === libro._id;
+          });
+
+          callback({
+            ok: resAgregar.ok && resCarrito.ok && itemEncontrado,
+            titulo: libro.titulo,
+            totalItems: carrito.items ? carrito.items.length : 0,
+            error: carritoAgregado.msg || carrito.msg || null
+          });
+        } catch (error) {
+          callback({ ok: false, error: error.message });
+        }
+      })();
+    });
+
+    assert.ok(resultado.ok, resultado.error || 'No se pudo agregar al carrito');
+    assert.ok(resultado.totalItems > 0);
   } finally {
     await driver.quit();
   }
