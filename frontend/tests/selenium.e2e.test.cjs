@@ -414,3 +414,116 @@ test('CP-010: Cliente agrega un libro al carrito', async () => {
     await driver.quit();
   }
 });
+
+test('CP-011: Cliente realiza una compra completa', async () => {
+  const driver = await crearDriver();
+
+  try {
+    await loginComoCliente(driver);
+
+    const resultado = await driver.executeAsyncScript(function () {
+      const callback = arguments[arguments.length - 1];
+
+      (async function () {
+        try {
+          const token = localStorage.getItem('token');
+
+          if (!token) {
+            callback({ ok: false, error: 'No existe token de cliente' });
+            return;
+          }
+
+          await fetch('/api/carrito', {
+            method: 'DELETE',
+            headers: {
+              Authorization: 'Bearer ' + token
+            }
+          });
+
+          const resLibros = await fetch('/api/libros?q=Cien%20Anos%20de%20Soledad');
+          const libros = await resLibros.json();
+
+          if (!Array.isArray(libros) || libros.length === 0) {
+            callback({ ok: false, error: 'No se encontró el libro' });
+            return;
+          }
+
+          const libro = libros[0];
+
+          const resAgregar = await fetch('/api/carrito/agregar', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: 'Bearer ' + token
+            },
+            body: JSON.stringify({
+              libroId: libro._id,
+              cantidad: 1
+            })
+          });
+
+          if (!resAgregar.ok) {
+            const errorAgregar = await resAgregar.json();
+            callback({ ok: false, error: errorAgregar.msg || 'No se pudo agregar al carrito' });
+            return;
+          }
+
+          const resCompra = await fetch('/api/ventas/checkout', {
+            method: 'POST',
+            headers: {
+              Authorization: 'Bearer ' + token
+            }
+          });
+
+          const compra = await resCompra.json();
+
+          if (!resCompra.ok) {
+            callback({ ok: false, error: compra.msg || 'No se pudo finalizar la compra' });
+            return;
+          }
+
+          const resCarrito = await fetch('/api/carrito', {
+            headers: {
+              Authorization: 'Bearer ' + token
+            }
+          });
+
+          const carrito = await resCarrito.json();
+
+          const resCompras = await fetch('/api/ventas/mias', {
+            headers: {
+              Authorization: 'Bearer ' + token
+            }
+          });
+
+          const compras = await resCompras.json();
+
+          const compraRegistrada = Array.isArray(compras) && compras.some(function (venta) {
+            return venta._id === compra._id;
+          });
+
+          const carritoVacio = carrito.items && carrito.items.length === 0;
+
+          callback({
+            ok: resCompra.ok && resCarrito.ok && resCompras.ok && compraRegistrada && carritoVacio,
+            compraId: compra._id,
+            estado: compra.estado,
+            total: compra.total,
+            carritoVacio,
+            compraRegistrada,
+            error: null
+          });
+        } catch (error) {
+          callback({ ok: false, error: error.message });
+        }
+      })();
+    });
+
+    assert.ok(resultado.ok, resultado.error || 'No se completó la compra');
+    assert.ok(resultado.compraRegistrada);
+    assert.ok(resultado.carritoVacio);
+    assert.strictEqual(resultado.estado, 'Pagada');
+  } finally {
+    await driver.quit();
+  }
+});
