@@ -44,8 +44,21 @@ jobs:
           echo "El frontend no inicio a tiempo"
           exit 1
 
-      - name: Ejecutar pruebas Selenium
+           - name: Crear carpeta de reportes
+        run: mkdir -p reports
+
+      - name: Ejecutar pruebas Selenium y generar reporte
         working-directory: frontend
         env:
           BASE_URL: http://127.0.0.1:3000
-        run: npm run test:selenium
+        run: |
+          npm run test:selenium 2>&1 | tee ../reports/reporte-selenium.txt
+          test ${PIPESTATUS[0]} -eq 0
+
+      - name: Subir reporte de Selenium
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: reporte-selenium
+          path: reports/reporte-selenium.txt
+          retention-days: 7
