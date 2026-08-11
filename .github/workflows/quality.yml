@@ -19,7 +19,11 @@ jobs:
         with:
           node-version: 24
 
-      - name: Instalar dependencias del frontend
+      - name: Instalar dependencias backend
+        working-directory: backend
+        run: npm ci
+
+      - name: Instalar dependencias frontend
         working-directory: frontend
         run: npm ci
 
@@ -27,13 +31,34 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Ejecutar frontend para pruebas
+      - name: Levantar backend
+        working-directory: backend
+        env:
+          MONGO_URI: ${{ secrets.MONGO_URI }}
+          PORT: 5000
+          FRONTEND_URL: http://127.0.0.1:3000
+        run: npm start > backend.log 2>&1 &
+
+      - name: Esperar que cargue el backend
+        run: |
+          for i in {1..40}; do
+            if curl -s http://127.0.0.1:5000 > /dev/null; then
+              echo "Backend listo"
+              exit 0
+            fi
+            echo "Esperando backend..."
+            sleep 2
+          done
+          echo "El backend no inicio a tiempo"
+          exit 1
+
+      - name: Levantar frontend
         working-directory: frontend
         run: npm run dev -- --host 127.0.0.1 --port 3000 > vite.log 2>&1 &
 
       - name: Esperar que cargue el frontend
         run: |
-          for i in {1..30}; do
+          for i in {1..40}; do
             if curl -s http://127.0.0.1:3000 > /dev/null; then
               echo "Frontend listo"
               exit 0
