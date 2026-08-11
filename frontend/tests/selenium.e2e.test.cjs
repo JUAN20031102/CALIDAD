@@ -28,14 +28,16 @@ async function crearDriver() {
   );
 
   opciones.addArguments(`--user-data-dir=${perfilTemporal}`);
+  opciones.addArguments('--headless=new');
+  opciones.addArguments('--no-sandbox');
+  opciones.addArguments('--disable-dev-shm-usage');
+  opciones.addArguments('--disable-gpu');
   opciones.addArguments('--remote-debugging-port=0');
   opciones.addArguments('--no-first-run');
   opciones.addArguments('--no-default-browser-check');
   opciones.addArguments('--disable-extensions');
   opciones.addArguments('--disable-notifications');
   opciones.addArguments('--disable-popup-blocking');
-  opciones.addArguments('--disable-gpu');
-  opciones.addArguments('--disable-software-rasterizer');
   opciones.addArguments('--window-size=1366,768');
 
   return new Builder()
