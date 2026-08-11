@@ -1,0 +1,51 @@
+﻿name: Pipeline de Calidad
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias del frontend
+        working-directory: frontend
+        run: npm ci
+
+      - name: Construir frontend
+        working-directory: frontend
+        run: npm run build
+
+      - name: Ejecutar frontend para pruebas
+        working-directory: frontend
+        run: npm run dev -- --host 127.0.0.1 --port 3000 > vite.log 2>&1 &
+
+      - name: Esperar que cargue el frontend
+        run: |
+          for i in {1..30}; do
+            if curl -s http://127.0.0.1:3000 > /dev/null; then
+              echo "Frontend listo"
+              exit 0
+            fi
+            echo "Esperando frontend..."
+            sleep 2
+          done
+          echo "El frontend no inicio a tiempo"
+          exit 1
+
+      - name: Ejecutar pruebas Selenium
+        working-directory: frontend
+        env:
+          BASE_URL: http://127.0.0.1:3000
+        run: npm run test:selenium
