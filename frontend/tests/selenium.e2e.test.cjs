@@ -8,11 +8,13 @@ const { Builder, By, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 
 const BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
+const CLIENTE_EMAIL = process.env.TEST_CLIENT_EMAIL || 'cliente1@cliente.com';
+const CLIENTE_PASSWORD = process.env.TEST_CLIENT_PASSWORD || 'cliente123';
 
 async function crearDriver() {
   const opciones = new chrome.Options();
 
- const chromePath1 = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+const chromePath1 = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const chromePath2 = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe';
 
   if (process.platform === 'win32') {
@@ -119,7 +121,7 @@ test('CP-004: La ruta de libros carga sin romper la aplicación', async () => {
   }
 });
 
-test('CP-005: Login valida campos obligatorios', async () => {
+test('CP-007: Login valida campos obligatorios', async () => {
   const driver = await crearDriver();
 
   try {
@@ -176,6 +178,118 @@ test('CP-008: Usuario sin sesión no puede acceder al administrador', async () =
       body.includes('No autorizado');
 
     assert.ok(accesoBloqueado);
+  } finally {
+    await driver.quit();
+  }
+});
+
+test('CP-005: Login correcto con usuario cliente', async () => {
+  const driver = await crearDriver();
+
+  try {
+    await abrir(driver, '/login');
+
+    const email = await driver.findElement(By.css('input[type="email"]'));
+    const password = await driver.findElement(By.css('input[type="password"]'));
+    const boton = await driver.findElement(By.css('form button'));
+
+    await email.sendKeys(CLIENTE_EMAIL);
+    await password.sendKeys(CLIENTE_PASSWORD);
+    await boton.click();
+
+    await driver.wait(async () => {
+      const url = await driver.getCurrentUrl();
+      const body = await driver.findElement(By.css('body')).getText();
+
+      return (
+        !url.includes('/login') ||
+        body.includes('Cerrar sesión') ||
+        body.includes('Mi carrito') ||
+        body.includes('Catálogo') ||
+        body.includes('Libros')
+      );
+    }, 15000);
+
+    const url = await driver.getCurrentUrl();
+    const body = await driver.findElement(By.css('body')).getText();
+
+    const loginExitoso =
+      !url.includes('/login') ||
+      body.includes('Cerrar sesión') ||
+      body.includes('Mi carrito') ||
+      body.includes('Catálogo') ||
+      body.includes('Libros');
+
+    assert.ok(loginExitoso);
+  } finally {
+    await driver.quit();
+  }
+});
+
+test('CP-006: Login incorrecto rechaza credenciales inválidas', async () => {
+  const driver = await crearDriver();
+
+  try {
+    await abrir(driver, '/login');
+
+    const email = await driver.findElement(By.css('input[type="email"]'));
+    const password = await driver.findElement(By.css('input[type="password"]'));
+    const boton = await driver.findElement(By.css('form button'));
+
+    await email.clear();
+    await password.clear();
+
+    await email.sendKeys('usuarioincorrecto@test.com');
+    await password.sendKeys('claveincorrecta');
+    await boton.click();
+
+    await driver.sleep(3000);
+
+    const url = await driver.getCurrentUrl();
+    const token = await driver.executeScript(
+      'return localStorage.getItem("token");'
+    );
+
+    const body = await driver.findElement(By.css('body')).getText();
+
+    const usuarioRechazado =
+      url.includes('/login') &&
+      (token === null || token === '') &&
+      !body.includes('Cerrar sesión');
+
+    assert.ok(usuarioRechazado);
+  } finally {
+    await driver.quit();
+  }
+});
+
+test('CP-009: Búsqueda de libros muestra resultados relacionados', async () => {
+  const driver = await crearDriver();
+
+  try {
+    await abrir(driver, '/libros');
+
+    const buscador = await driver.findElement(By.css('input[type="search"]'));
+
+    await buscador.clear();
+    await buscador.sendKeys('Cien Anos de Soledad');
+
+    await driver.wait(async () => {
+      const body = await driver.findElement(By.css('body')).getText();
+
+      return (
+        body.includes('Cien Anos de Soledad') ||
+        body.includes('Gabriel Garcia Marquez')
+      );
+    }, 15000);
+
+    const body = await driver.findElement(By.css('body')).getText();
+
+    const resultadoEncontrado =
+      body.includes('Cien Anos de Soledad') ||
+      body.includes('Gabriel Garcia Marquez');
+
+    assert.ok(resultadoEncontrado);
   } finally {
     await driver.quit();
   }
