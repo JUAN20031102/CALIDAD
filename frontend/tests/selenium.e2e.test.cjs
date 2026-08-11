@@ -12,13 +12,15 @@ const BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
 async function crearDriver() {
   const opciones = new chrome.Options();
 
-  const chromePath1 = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
-  const chromePath2 = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe';
+ const chromePath1 = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+const chromePath2 = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe';
 
-  if (fs.existsSync(chromePath1)) {
-    opciones.setChromeBinaryPath(chromePath1);
-  } else if (fs.existsSync(chromePath2)) {
-    opciones.setChromeBinaryPath(chromePath2);
+  if (process.platform === 'win32') {
+    if (fs.existsSync(chromePath1)) {
+      opciones.setChromeBinaryPath(chromePath1);
+    } else if (fs.existsSync(chromePath2)) {
+      opciones.setChromeBinaryPath(chromePath2);
+    }
   }
 
   const perfilTemporal = fs.mkdtempSync(
