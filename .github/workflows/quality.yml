@@ -72,6 +72,15 @@ jobs:
       - name: Crear carpeta de reportes
         run: mkdir -p reports
 
+      - name: Auditoría de dependencias backend
+        working-directory: backend
+        run: npm audit
+
+      - name: Auditoría de dependencias frontend
+        working-directory: frontend
+        continue-on-error: true
+        run: npm audit
+
       - name: Ejecutar pruebas Selenium y generar reporte
         working-directory: frontend
         env:
