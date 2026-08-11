@@ -1,3 +1,5 @@
+const dns = require('dns');
+dns.setServers(['8.8.8.8', '8.8.4.4']);
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -15,7 +17,7 @@ const mlRoutes = require('./routes/mlRoutes');
 
 const app = express();
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/libreria_mern';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://jgerardoqq_db_user:estudio2012@ac-5kj0be3-shard-00-00.kgznko4.mongodb.net:27017,ac-5kj0be3-shard-00-01.kgznko4.mongodb.net:27017,ac-5kj0be3-shard-00-02.kgznko4.mongodb.net:27017/libreria_mern?authSource=admin&ssl=true&replicaSet=atlas-ngsmvl-shard-0&appName=ClusterCulebra';
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
@@ -40,7 +42,7 @@ mongoose.connect(MONGO_URI)
     app.listen(PORT, () => console.log(`Servidor backend en http://localhost:${PORT}`));
   })
   .catch(err => {
-    console.error('No se pudo conectar a MongoDB. Verifica que MongoDB Compass/Server este corriendo en localhost:27017');
+    console.error('No se pudo conectar a MongoDB Atlas. Verifica las credenciales y la conectividad');
     console.error(err.message);
     process.exit(1);
   });

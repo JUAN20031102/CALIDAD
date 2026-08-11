@@ -1,8 +1,10 @@
+const dns = require('dns');
+dns.setServers(['8.8.8.8', '8.8.4.4']);
 const mongoose = require('mongoose');
 require('dotenv').config();
 const Libro = require('./models/Libro');
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/libreria_mern';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://jgerardoqq_db_user:estudio2012@ac-5kj0be3-shard-00-00.kgznko4.mongodb.net:27017,ac-5kj0be3-shard-00-01.kgznko4.mongodb.net:27017,ac-5kj0be3-shard-00-02.kgznko4.mongodb.net:27017/libreria_mern?authSource=admin&ssl=true&replicaSet=atlas-ngsmvl-shard-0&appName=ClusterCulebra';
 
 const LIBROS = [
   // ---------- AUTOAYUDA ----------
